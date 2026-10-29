@@ -1,0 +1,282 @@
+.elementor-23427 .elementor-element.elementor-element-68e9a05 > .elementor-container > .elementor-column > .elementor-widget-wrap{align-content:center;align-items:center;}.elementor-23427 .elementor-element.elementor-element-d7ebb30 .elementor-menu-toggle{margin:0 auto;}.elementor-23427 .elementor-element.elementor-element-d7ebb30 .elementor-nav-menu .elementor-item{font-family:"Nunito Sans", Sans-serif;font-size:21px;font-weight:900;text-transform:uppercase;}.elementor-23427 .elementor-element.elementor-element-d7ebb30 .elementor-nav-menu--main .elementor-item{color:#414244;fill:#414244;}.elementor-23427 .elementor-element.elementor-element-0ed9329 > .elementor-container > .elementor-column > .elementor-widget-wrap{align-content:center;align-items:center;}.elementor-23427 .elementor-element.elementor-element-0ed9329:not(.elementor-motion-effects-element-type-background), .elementor-23427 .elementor-element.elementor-element-0ed9329 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#F6F6F6;}.elementor-23427 .elementor-element.elementor-element-0ed9329 > .elementor-container{min-height:81px;}.elementor-23427 .elementor-element.elementor-element-0ed9329{border-style:solid;border-width:1px 0px 1px 0px;border-color:#E8E8E8;transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-23427 .elementor-element.elementor-element-0ed9329 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-23427 .elementor-element.elementor-element-1195e3b{text-align:start;}.elementor-23427 .elementor-element.elementor-element-6aaddc2 .elementor-search-form__container{min-height:32px;}.elementor-23427 .elementor-element.elementor-element-6aaddc2 .elementor-search-form__submit{min-width:32px;}body:not(.rtl) .elementor-23427 .elementor-element.elementor-element-6aaddc2 .elementor-search-form__icon{padding-left:calc(32px / 3);}body.rtl .elementor-23427 .elementor-element.elementor-element-6aaddc2 .elementor-search-form__icon{padding-right:calc(32px / 3);}.elementor-23427 .elementor-element.elementor-element-6aaddc2 .elementor-search-form__input, .elementor-23427 .elementor-element.elementor-element-6aaddc2.elementor-search-form--button-type-text .elementor-search-form__submit{padding-left:calc(32px / 3);padding-right:calc(32px / 3);}.elementor-23427 .elementor-element.elementor-element-6aaddc2 input[type="search"].elementor-search-form__input{font-family:"Merriweather", Sans-serif;}.elementor-23427 .elementor-element.elementor-element-6aaddc2:not(.elementor-search-form--skin-full_screen) .elementor-search-form__container{border-color:#ADADAD;border-width:1px 1px 1px 1px;border-radius:3px;}.elementor-23427 .elementor-element.elementor-element-6aaddc2.elementor-search-form--skin-full_screen input[type="search"].elementor-search-form__input{border-color:#ADADAD;border-width:1px 1px 1px 1px;border-radius:3px;}.elementor-theme-builder-content-area{height:400px;}.elementor-location-header:before, .elementor-location-footer:before{content:"";display:table;clear:both;}@media(min-width:768px){.elementor-23427 .elementor-element.elementor-element-95c2a72{width:32.018%;}.elementor-23427 .elementor-element.elementor-element-e4041c3{width:67.982%;}.elementor-23427 .elementor-element.elementor-element-c549012{width:74.912%;}.elementor-23427 .elementor-element.elementor-element-06614aa{width:25.044%;}}/* Start custom CSS for section, class: .elementor-element-0ed9329 */.relevanssi-live-search-results {
+  width: 480px !important;
+  max-width: 90vw !important;   /* keep it on-screen */
+  z-index: 999999 !important;
+  border-radius: 10px;
+  overflow: visible !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,.18);
+}
+
+.relevanssi-live-search-results .ajax-results {
+  max-height: 520px !important;
+  overflow-y: auto !important;
+}
+
+/* Make each result row feel clickable */
+.relevanssi-live-search-result a {
+  display: block;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+/* Tighten default spacing */
+.relevanssi-live-search-result p {
+  margin: 0;
+}
+
+/* --- Live search dropdown container --- */
+.relevanssi-live-search-results {
+  font-size: 0.95em;           /* slightly smaller than body */
+  line-height: 1.25;           /* tighter overall */
+}
+
+/* Optional: tighten/normalize the status line too */
+.relevanssi-live-search-result-status p {
+  margin: 0;
+  padding: 8px 12px;
+  font-size: 0.92em;
+  opacity: 0.8;
+}
+
+/* --- Each result row --- */
+.relevanssi-live-search-result.rlvls-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;         /* tighter than baseline */
+  gap: 10px;
+
+  padding: 6px 10px;           /* tighten vertical space */
+  margin: 0;                   /* ensure no margins */
+  border: 0;
+}
+
+/* Remove any default paragraph spacing if the plugin stylesheet adds it somewhere */
+.relevanssi-live-search-result.rlvls-row p {
+  margin: 0;
+}
+
+/* --- Zebra striping (alternating subtle grey) --- */
+/* This applies to result rows only, not the status message */
+.ajax-results .relevanssi-live-search-result.rlvls-row:nth-of-type(even) {
+  background: rgba(0,0,0,0.03);
+}
+.ajax-results .relevanssi-live-search-result.rlvls-row:nth-of-type(odd) {
+  background: transparent;
+}
+
+/* Hover/focus state so it feels clickable */
+.relevanssi-live-search-result.rlvls-row:hover,
+.relevanssi-live-search-result.rlvls-row:focus-within {
+  background: rgba(0,0,0,0.06);
+}
+
+/* --- Title (left side) --- */
+.relevanssi-live-search-result.rlvls-row .rlvls-title {
+  font-weight: 500;
+  text-decoration: none;
+
+  /* Let long titles use up to 2 lines instead of clipping hard */
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;       /* show up to 2 lines */
+  -webkit-box-orient: vertical;
+
+  /* Helps it wrap nicely */
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+/* --- Label badge (right side) --- */
+.relevanssi-live-search-result.rlvls-row .rlvls-label {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  font-family: Nunito Sans, Sans-Serif;
+  font-weight: 900;            /* bold */
+  font-size: 0.75em;           /* smaller than title */
+  color: rgba(0,0,0,0.72);     /* medium-dark grey */
+
+  border: 2px solid rgba(0,0,0,0.55);  /* “stamp” border weight */
+  border-radius: 999px;        /* pill shape */
+  padding: 2px 8px;            /* tight but readable */
+  letter-spacing: 0.04em;
+}
+
+/* Optional: make WOOD stand out slightly more than ARTICLE without adding color */
+.relevanssi-live-search-result.rlvls-row .rlvls-label {
+  text-transform: uppercase;
+}
+
+.rlvls-title em{
+  font-style: italic;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+.rlvls-title{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* --- "Press Enter" helper row --- */
+.rlvls-enter-hint{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 6px 10px;
+  margin-top: 2px;
+
+  font-size: 0.85em;
+  color: rgba(0,0,0,0.55);
+
+  border-top: 1px solid rgba(0,0,0,0.08);
+  background: rgba(0,0,0,0.02);
+}
+
+/* Little enter-key badge */
+.rlvls-enter-key{
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.9em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 2px solid rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.6);
+  line-height: 1;
+}
+
+/* Text next to it */
+.rlvls-enter-text{
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.rlvls-enter-hint{
+  padding-left: 25px;
+  font-size: 1em;  
+  color: rgba(0,0,0,0.6);
+  border-top: 1px solid rgba(0,0,0,0.08);
+  background: rgba(0,0,0,0.02);
+}
+
+.relevanssi-live-search-results {
+  overflow: visible !important;
+  max-height: none !important;
+  height: auto !important;
+}
+
+/* Actual scroll area */
+.relevanssi-live-search-results .ajax-results {
+  max-height: 520px !important;
+  overflow-y: auto !important;
+}
+
+/* Unified row hover */
+.relevanssi-live-search-result.rlvls-row:hover,
+.relevanssi-live-search-result.rlvls-row:focus-within {
+  background: rgba(0,0,0,0.08);
+}
+
+.relevanssi-live-search-result.rlvls-row:hover {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.35);
+}
+
+/* Badge reacts on row hover */
+.relevanssi-live-search-result.rlvls-row:hover .rlvls-label {
+  color: rgba(0,0,0,0.9);
+  border-color: rgba(0,0,0,0.75);
+  background: rgba(0,0,0,0.05);
+}
+
+.relevanssi-live-search-result.rlvls-row:hover .rlvls-title {
+  color: rgba(0,0,0,0.9);
+}
+
+.relevanssi-live-search-result.rlvls-row,
+.relevanssi-live-search-result.rlvls-row * {
+  transition: background-color 120ms ease,
+              color 120ms ease,
+              border-color 120ms ease,
+              box-shadow 120ms ease;
+}
+
+.relevanssi-live-search-results .ajax-results .relevanssi-live-search-result.rlvls-row:hover,
+.relevanssi-live-search-results .ajax-results .relevanssi-live-search-result.rlvls-row:focus-within {
+  background-color: rgba(0,0,0,0.10) !important;
+}
+
+/* Odd rows: slightly darker hover */
+.relevanssi-live-search-results .ajax-results .relevanssi-live-search-result.rlvls-row:nth-of-type(odd):hover,
+.relevanssi-live-search-results .ajax-results .relevanssi-live-search-result.rlvls-row:nth-of-type(odd):focus-within {
+  background-color: rgba(0,0,0,0.10) !important;
+}
+
+/* Even rows: hover a bit darker than its existing fill */
+.relevanssi-live-search-results .ajax-results .relevanssi-live-search-result.rlvls-row:nth-of-type(even):hover,
+.relevanssi-live-search-results .ajax-results .relevanssi-live-search-result.rlvls-row:nth-of-type(even):focus-within {
+  background-color: rgba(0,0,0,0.13) !important;
+}
+
+.relevanssi-live-search-result.rlvls-row:hover .rlvls-label,
+.relevanssi-live-search-result.rlvls-row:focus-within .rlvls-label {
+  background-color: rgba(255,255,255,0.35);
+}
+
+.relevanssi-live-search-result.rlvls-row {
+  cursor: pointer;
+}
+
+/* Relevanssi spinner host: neutralize plugin visuals */
+#relevanssi-live-ajax-search-spinner {
+  position: relative;
+  display: none;                /* hidden by default */
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+/* When plugin indicates spinner should show */
+#relevanssi-live-ajax-search-spinner.rlv-has-spinner {
+  display: flex;
+}
+
+/* Nuke any default spinner drawing that might be background/pseudo-elements */
+#relevanssi-live-ajax-search-spinner.rlv-has-spinner::before,
+#relevanssi-live-ajax-search-spinner.rlv-has-spinner::after {
+  content: none !important;
+}
+
+/* kill ANY built-in spinner drawing on the host element itself */
+#relevanssi-live-ajax-search-spinner.rlv-has-spinner{
+  background: none !important;
+  background-image: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+  border: 0 !important;
+  animation: none !important;
+}
+
+/* also kill any plugin-provided fixed size so it doesn't “reserve” a C-shape */
+#relevanssi-live-ajax-search-spinner{
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+}
+
+/* ensure the injected component stays square in this context */
+#relevanssi-live-ajax-search-spinner .wdb-spinner{
+  width: var(--wdb-spinner-size) !important;
+  height: var(--wdb-spinner-size) !important;
+  flex: 0 0 var(--wdb-spinner-size) !important;
+}
+
+/* ensure the image never distorts */
+#relevanssi-live-ajax-search-spinner .wdb-spinner__img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain;
+}/* End custom CSS */
