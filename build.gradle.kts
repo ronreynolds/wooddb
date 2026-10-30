@@ -22,6 +22,10 @@ fun DependencyHandlerScope.lombok() {
 }
 
 dependencies {
+    implementation(libs.jackson.core)
+    implementation(libs.jackson.databind)
+    implementation(libs.jackson.yaml) // YAMLFactory
+
     implementation(libs.jsoup)
     implementation(libs.picocli)
     implementation(libs.slf4j.api)
