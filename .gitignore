@@ -38,3 +38,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### local working data; no point in pushing to git
+src/main/resources/source-sites/
