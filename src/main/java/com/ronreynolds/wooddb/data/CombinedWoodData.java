@@ -11,6 +11,7 @@ import java.util.List;
  * collecting all the wood-data records into a single record
  */
 public record CombinedWoodData(
+        String scientificName,
         BasicWoodData basicData,
         WoodMetaData metaData,
         WoodImages images,
