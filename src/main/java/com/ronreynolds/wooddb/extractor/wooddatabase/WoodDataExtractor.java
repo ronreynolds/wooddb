@@ -9,8 +9,11 @@ import com.ronreynolds.wooddb.data.WoodMetaData;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.jsoup.helper.ValidationException;
+import org.jsoup.internal.StringUtil;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.jsoup.select.Evaluator;
+import org.jsoup.select.QueryParser;
 
 import java.io.File;
 import java.io.IOException;
@@ -60,7 +63,7 @@ public class WoodDataExtractor {
         relatedSpecies("p:has(strong:contains(Related Species:))"),
 
         // WoodImages
-        endgrainImage("figure:has(figcaption:matches(end\\s?grain( 1x)?)) > a", e -> e.absUrl("href")),
+        endgrainImage("figure:has(figcaption:matches(end\\s?grain( 1x)?\\)$)) > a", e -> e.absUrl("href")),
         endgrainImage10x("figure:has(figcaption:matches(end\\s?grain 10x)) > a", e -> e.absUrl("href")),
 
         // WoodAnatomy
@@ -73,6 +76,7 @@ public class WoodDataExtractor {
         lookalikes("p:has(strong:contains(Lookalikes/Substitutes:))"),
         notes("p:has(strong:contains(Notes:))");
 
+        final Evaluator eval;
         final String cssPath;
         final Function<Element, String> getTextMethod;
 
@@ -82,12 +86,13 @@ public class WoodDataExtractor {
 
         CSSPaths(String cssPath, Function<Element, String> getTextMethod) throws ValidationException {
             log.info("Compiling CSS Path: {}", cssPath);
+            this.eval = QueryParser.parse(cssPath);
             this.cssPath = cssPath;
             this.getTextMethod = getTextMethod;
         }
 
         Optional<Element> select(Document doc) {
-            return Optional.ofNullable(doc.selectFirst(cssPath));
+            return Optional.ofNullable(doc.selectFirst(eval));
         }
         String text(Document doc) {
             return select(doc).map(getTextMethod).orElseGet(() -> { log.info("unable to find {}", cssPath); return null; });
@@ -115,9 +120,13 @@ public class WoodDataExtractor {
 
             Document doc = Jsoup.parse(woodDataHtmlFile, "UTF-8");
             String scientificName = CSSPaths.scientificName.text(doc);
-            if (scientificName == null || scientificName.isBlank()) {
+            if (StringUtil.isBlank(scientificName)) {
                 log.info("unable to find default scientific name; checking for italics version");
                 scientificName = CSSPaths.scientificNameWithItalics.text(doc);
+                if (StringUtil.isBlank(scientificName)) {
+                    log.warn("failed to find scientific name in wood-specific page; falling back to BasicWoodData");
+                    scientificName = woodData.binomial();
+                }
             }
             combinedWoodDataList.add(
                     new CombinedWoodData(
