@@ -25,6 +25,7 @@ dependencies {
     implementation(libs.jackson.core)
     implementation(libs.jackson.databind)
     implementation(libs.jackson.yaml) // YAMLFactory
+    implementation(libs.j2html)
     implementation(libs.jsoup)
     implementation(libs.slf4j.api)
 

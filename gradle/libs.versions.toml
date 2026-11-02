@@ -1,6 +1,7 @@
 [versions]
 assertJ = "3.24.2"
 jackson = "2.18.3" # 2025-03-01
+j2html = "1.6.0"    # 2022-06
 jsoup = "1.23.1"
 jUnitJupiter = "5.10.2"
 jUnitLauncher = "1.11.4"
@@ -12,6 +13,7 @@ assertj-core = { group = "org.assertj", name = "assertj-core", version.ref = "as
 jackson-core = { group = "com.fasterxml.jackson.core", name = "jackson-core", version.ref = "jackson" }
 jackson-databind = { group = "com.fasterxml.jackson.core", name = "jackson-databind", version.ref = "jackson" }
 jackson-yaml = { group = "com.fasterxml.jackson.dataformat", name = "jackson-dataformat-yaml", version.ref = "jackson" }
+j2html = { group = "com.j2html", name = "j2html", version.ref = "j2html" }
 jsoup = { group = "org.jsoup", name = "jsoup", version.ref = "jsoup" }  # https://github.com/jhy/jsoup/
 junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "jUnitJupiter" }
 junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher", version.ref = "jUnitLauncher" }
