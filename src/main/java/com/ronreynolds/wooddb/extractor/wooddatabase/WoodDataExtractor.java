@@ -60,17 +60,15 @@ public class WoodDataExtractor {
         relatedSpecies("p:has(strong:contains(Related Species:))"),
 
         // WoodImages
-        endgrainImage("a[href$='endgrain.jpg']", e -> e.absUrl("href")),
-        endgrainImage10x("a[href$='endgrain-zoom.jpg']", e -> e.absUrl("href")),
-        endgrainImage2("figure:has(figcaption:contains(endgrain 1x)) > a", e -> e.absUrl("href")),
-        endgrainImage10x2("figure:has(figcaption:contains(endgrain 10x)) > a", e -> e.absUrl("href")),
+        endgrainImage("figure:has(figcaption:matches(end\\s?grain( 1x)?)) > a", e -> e.absUrl("href")),
+        endgrainImage10x("figure:has(figcaption:matches(end\\s?grain 10x)) > a", e -> e.absUrl("href")),
 
         // WoodAnatomy
-        porosity("a[href='https://www.wood-database.com/wood-articles/hardwood-anatomy/#porosity']"),
-        arrangement("a[href='https://www.wood-database.com/wood-articles/hardwood-anatomy/#arrangement']"),
-        vessels("a[href='https://www.wood-database.com/wood-articles/hardwood-anatomy/#size']"),
-        parenchyma("a[href='https://www.wood-database.com/wood-articles/hardwood-anatomy/#paratracheal']"),
-        rays("a[href='https://www.wood-database.com/wood-articles/hardwood-anatomy/#rays']"),
+        porosity("p:has(a[href='https://www.wood-database.com/wood-articles/hardwood-anatomy/#porosity'])"),
+        arrangement("p:has(a[href='https://www.wood-database.com/wood-articles/hardwood-anatomy/#arrangement'])"),
+        vessels("p:has(a[href='https://www.wood-database.com/wood-articles/hardwood-anatomy/#size'])"),
+        parenchyma("p:has(a[href='https://www.wood-database.com/wood-articles/hardwood-anatomy/#paratracheal'])"),
+        rays("p:has(a[href='https://www.wood-database.com/wood-articles/hardwood-anatomy/#rays'])"),
 
         lookalikes("p:has(strong:contains(Lookalikes/Substitutes:))"),
         notes("p:has(strong:contains(Notes:))");
@@ -140,8 +138,8 @@ public class WoodDataExtractor {
                                     CSSPaths.commonUses.text(doc),
                                     CSSPaths.comments.text(doc)),
                             new WoodImages(
-                                    CSSPaths.endgrainImage2.text(doc),
-                                    CSSPaths.endgrainImage10x2.text(doc)),
+                                    CSSPaths.endgrainImage.text(doc),
+                                    CSSPaths.endgrainImage10x.text(doc)),
                             new MaterialData(
                                     CSSPaths.averageDriedWeight.text(doc),
                                     CSSPaths.specificGravity.text(doc),
