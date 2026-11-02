@@ -119,10 +119,10 @@ public class WoodDataExtractor {
             }
 
             Document doc = Jsoup.parse(woodDataHtmlFile, "UTF-8");
-            String scientificName = CSSPaths.scientificName.text(doc);
+            String scientificName = CSSPaths.scientificNameWithItalics.text(doc);   // look for this version first
             if (StringUtil.isBlank(scientificName)) {
                 log.info("unable to find default scientific name; checking for italics version");
-                scientificName = CSSPaths.scientificNameWithItalics.text(doc);
+                scientificName = CSSPaths.scientificName.text(doc);
                 if (StringUtil.isBlank(scientificName)) {
                     log.warn("failed to find scientific name in wood-specific page; falling back to BasicWoodData");
                     scientificName = woodData.binomial();
