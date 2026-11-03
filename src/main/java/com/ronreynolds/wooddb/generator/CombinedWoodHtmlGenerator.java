@@ -57,6 +57,7 @@ public class CombinedWoodHtmlGenerator {
                         tr(
                                 th("Scientific Name"),
                                 th("Common Names"),
+                                th("Edgegrain"),
                                 th("Endgrain"),
                                 th("Endgrain 10x"),
                                 th("Porosity"),
@@ -71,8 +72,12 @@ public class CombinedWoodHtmlGenerator {
                         each(combinedWoodData, data -> tr(
                                 td(data.scientificName()),
                                 td(data.commonNames()),
-                                td(img().withSrc(imageToLocalPath(data.endgrainUrl()))),
-                                td(img().withSrc(imageToLocalPath(data.endgrain10xUrl()))),
+                                td(a().withTarget("_blank").withHref(imageToLocalPath(data.edgeGrainUrl())).with(
+                                        img().withSrc(imageToLocalPath(data.edgeGrainUrl())))),
+                                td(a().withTarget("_blank").withHref(imageToLocalPath(data.endGrainUrl())).with(
+                                        img().withSrc(imageToLocalPath(data.endGrainUrl())))),
+                                td(a().withTarget("_blank").withHref(imageToLocalPath(data.endGrain10xUrl())).with(
+                                        img().withSrc(imageToLocalPath(data.endGrain10xUrl())))),
                                 td(nullToBlank(data.porosity())),
                                 td(nullToBlank(data.arrangement())),
                                 td(nullToBlank(data.vessels())),
