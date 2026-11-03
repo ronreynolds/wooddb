@@ -5,5 +5,10 @@ package com.ronreynolds.wooddb.data;
  */
 public record WoodImages(
         String endgrainImage,
-        String endgrain10xImage) {
+        String endgrain10xImage,
+        String edgeGrainImage) {
+    // backwards-compat ctor
+    public WoodImages(String endgrain, String endgrain10x) {
+        this(endgrain, endgrain10x, null);
+    }
 }
