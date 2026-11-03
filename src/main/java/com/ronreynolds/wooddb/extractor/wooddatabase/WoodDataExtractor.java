@@ -29,8 +29,9 @@ import java.util.regex.Pattern;
  */
 @Slf4j
 public class WoodDataExtractor {
-    private static final Pattern TRIM_COMMA          = Pattern.compile("\\s*,\\s*");
-    private static final Pattern WOOD_DB_URL_PATTERN = Pattern.compile("https://www.wood-database.com/(.*?)/");
+    private static final Pattern TRIM_COMMA                 = Pattern.compile("\\s*,\\s*");
+    private static final Pattern WOOD_DB_URL_PATTERN        = Pattern.compile("https://www.wood-database.com/(.*?)/");
+    private static final Pattern WOOD_DB_LOCAL_FILE_PATTERN = Pattern.compile("./Wood Filter _ The Wood Database_files/(.*?)");
 
     // the CSS path values used to find all the bits within the HTML
     private enum CSSPaths {
@@ -148,7 +149,8 @@ public class WoodDataExtractor {
                                     CSSPaths.comments.text(doc)),
                             new WoodImages(
                                     CSSPaths.endgrainImage.text(doc),
-                                    CSSPaths.endgrainImage10x.text(doc)),
+                                    CSSPaths.endgrainImage10x.text(doc),
+                                    mapLocalFileToWoodDBUrl(woodData.imageUrl())),
                             new MaterialData(
                                     CSSPaths.averageDriedWeight.text(doc),
                                     CSSPaths.specificGravity.text(doc),
@@ -182,6 +184,17 @@ public class WoodDataExtractor {
             return "src/main/resources/source-sites/wood-database/wood-pages/" + mat.group(1) + ".html";
         } else {
             throw new IllegalArgumentException("malformed url " + url);
+        }
+    }
+
+    static String mapLocalFileToWoodDBUrl(String localFile) {
+        // src/main/resources/source-sites/wood-database/wood-pages/cape-holly.html -> https://www.wood-database.com/cape-holly/
+        Matcher mat = WOOD_DB_LOCAL_FILE_PATTERN.matcher(localFile);
+        if (mat.matches()) {
+            return "https://www.wood-database.com/wp-content/uploads/" + mat.group(1);
+        } else {
+            log.info("malformed local file path: {}", localFile);
+            return localFile;
         }
     }
 }
