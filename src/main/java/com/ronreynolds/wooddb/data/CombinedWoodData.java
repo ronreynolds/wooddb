@@ -21,11 +21,14 @@ public record CombinedWoodData(
     public String commonNames() {
         return String.join(", ", metaData.commonNames() == null ? new String[0] : metaData.commonNames());
     }
-    public String endgrainUrl() {
-        return images.endgrainImage();
+    public String edgeGrainUrl() {
+        return images.edgeGrainImage();
     }
-    public String endgrain10xUrl() {
-        return images.endgrain10xImage();
+    public String endGrainUrl() {
+        return images.endGrainImage();
+    }
+    public String endGrain10xUrl() {
+        return images.endGrain10xImage();
     }
 
     public String porosity() {
