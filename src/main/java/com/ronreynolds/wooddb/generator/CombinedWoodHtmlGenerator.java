@@ -39,6 +39,7 @@ public class CombinedWoodHtmlGenerator {
             "https://www.wood-database.com/wp-content/uploads/(.*)");
     private static final String  IMAGE_DIR               = "images/";
     private static final String  COMBINED_WOOD_DATA_YAML = "combined-wood-data.yaml";
+    private static final String  HTML_OUTPUT_DIR         = "src/main/resources/combined-wood-data/";
 
     public static void main(String[] args) throws IOException {
         File                   combinedWoodDataFile = new File(COMBINED_WOOD_DATA_YAML);
@@ -49,7 +50,7 @@ public class CombinedWoodHtmlGenerator {
         var head = head(
                 meta().withCharset("utf-8"),
                 title("Combined Wood Data"),
-                link().withRel("stylesheet").withHref("/css/main.css")
+                link().withRel("stylesheet").withHref("css/main.css")
         );
         var table = table(
                 thead(
@@ -87,7 +88,7 @@ public class CombinedWoodHtmlGenerator {
                 table
         );
 
-        Files.writeString(Path.of("combined-wood-data.html"), html(head, body).renderFormatted());
+        Files.writeString(Path.of(HTML_OUTPUT_DIR, "combined-wood-data.html"), html(head, body).renderFormatted());
     }
 
     private static String nullToBlank(String s) {
