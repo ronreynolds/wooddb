@@ -52,18 +52,24 @@ public class WoodDataExtractor {
                 withNextSiblingTextMethod("p")),
 
         // WoodMetaData
-        colorAppearance("p:has(a[href='https://www.wood-database.com/wood-articles/wood-color-appearance/'])"),
-        grainTexture("p:has(a[href='https://www.wood-database.com/wood-articles/wood-grain-texture/'])"),
-        rotResistance("p:has(a[href='https://www.wood-database.com/wood-articles/wood-durability/'])"),
-        workability("p:has(a[href='https://www.wood-database.com/wood-articles/wood-workability/'])"),
-        odor("p:has(a[href='https://www.wood-database.com/wood-articles/wood-odor/'])"),
+        colorAppearance("p:has(a[href='https://www.wood-database.com/wood-articles/wood-color-appearance/'])",
+                trimPrefixTextMethod("Color/Appearance: ")),
+        grainTexture("p:has(a[href='https://www.wood-database.com/wood-articles/wood-grain-texture/'])",
+                trimPrefixTextMethod("Grain/Texture: ")),
+        rotResistance("p:has(a[href='https://www.wood-database.com/wood-articles/wood-durability/'])",
+                trimPrefixTextMethod("Rot Resistance: ")),
+        workability("p:has(a[href='https://www.wood-database.com/wood-articles/wood-workability/'])",
+                trimPrefixTextMethod("Workability: ")),
+        odor("p:has(a[href='https://www.wood-database.com/wood-articles/wood-odor/'])", trimPrefixTextMethod("Odor: ")),
         allergies("p:has(a[href='https://www.wood-database.com/wood-articles/wood-allergies-and-toxicity/'])",
                 trimPrefixTextMethod("Allergies/Toxicity: ")),
-        price("p:has(a[href='https://www.wood-database.com/wood-articles/wood-pricing-availability/'])"),
-        sustainability("p:has(a[href='https://www.wood-database.com/wood-articles/restricted-and-endangered-wood-species/'])"),
-        commonUses("p:has(strong:contains(Common Uses:))"),
+        price("p:has(a[href='https://www.wood-database.com/wood-articles/wood-pricing-availability/'])",
+                trimPrefixTextMethod("Pricing/Availability: ")),
+        sustainability("p:has(a[href='https://www.wood-database.com/wood-articles/restricted-and-endangered-wood-species/'])",
+                trimPrefixTextMethod("Sustainability: ")),
+        commonUses("p:has(strong:contains(Common Uses:))", trimPrefixTextMethod("Common Uses: ")),
         comments("p:has(strong:contains(Comments:))", trimPrefixTextMethod("Comments: ")),
-        relatedSpecies("p:has(strong:contains(Related Species:))"),
+        relatedSpecies("p:has(strong:contains(Related Species:))", trimPrefixTextMethod("Related Species: ")),
 
         // WoodImages
         endgrainImage("figure:has(figcaption:matches(end\\s?grain( 1x)?\\)$)) > a", e -> e.absUrl("href")),
@@ -76,8 +82,8 @@ public class WoodDataExtractor {
         parenchyma("p:has(a[href='https://www.wood-database.com/wood-articles/hardwood-anatomy/#paratracheal'])"),
         rays("p:has(a[href='https://www.wood-database.com/wood-articles/hardwood-anatomy/#rays'])"),
 
-        lookalikes("p:has(strong:contains(Lookalikes/Substitutes:))"),
-        notes("p:has(strong:contains(Notes:))");
+        lookalikes("p:has(strong:contains(Lookalikes/Substitutes:))", trimPrefixTextMethod("Lookalikes/Substitutes: ")),
+        notes("p:has(strong:contains(Notes:))", trimPrefixTextMethod("Notes: "));
 
         /**
          * the compiled CSS path evaluator
