@@ -1,22 +1,27 @@
 [versions]
 assertJ = "3.24.2"
-jackson = "2.18.3" # 2025-03-01
 j2html = "1.6.0"    # 2022-06
+jackson = "2.18.3" # 2025-03-01
+jdbi = "3.55.0"
 jsoup = "1.23.1"
 jUnitJupiter = "5.10.2"
 jUnitLauncher = "1.11.4"
 lombok = "1.18.32"
-slf4j = "1.7.25"
+mariadb = "4.0.0"
+slf4j = "2.0.20"    # 2026-09-22 (jdbi requires 2.0+)
 
 [libraries]
 assertj-core = { group = "org.assertj", name = "assertj-core", version.ref = "assertJ" }
+j2html = { group = "com.j2html", name = "j2html", version.ref = "j2html" }
 jackson-core = { group = "com.fasterxml.jackson.core", name = "jackson-core", version.ref = "jackson" }
 jackson-databind = { group = "com.fasterxml.jackson.core", name = "jackson-databind", version.ref = "jackson" }
 jackson-yaml = { group = "com.fasterxml.jackson.dataformat", name = "jackson-dataformat-yaml", version.ref = "jackson" }
-j2html = { group = "com.j2html", name = "j2html", version.ref = "j2html" }
+jdbi-bom = { group = "org.jdbi", name = "jdbi3-bom", version.ref = "jdbi" }
+jdbi-core = { group = "org.jdbi", name = "jdbi3-core", version.ref = "jdbi" }
 jsoup = { group = "org.jsoup", name = "jsoup", version.ref = "jsoup" }  # https://github.com/jhy/jsoup/
 junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "jUnitJupiter" }
 junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher", version.ref = "jUnitLauncher" }
 lombok = { group = "org.projectlombok", name = "lombok", version.ref = "lombok" }
+mariadb-client = { group = "org.mariadb.jdbc", name = "mariadb-java-client", version.ref = "mariadb" }
 slf4j-api = { group = "org.slf4j", name = "slf4j-api", version.ref = "slf4j" }
 slf4j-simple = { group = "org.slf4j", name = "slf4j-simple", version.ref = "slf4j" }

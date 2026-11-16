@@ -22,11 +22,14 @@ fun DependencyHandlerScope.lombok() {
 }
 
 dependencies {
+    implementation(libs.j2html)
     implementation(libs.jackson.core)
     implementation(libs.jackson.databind)
     implementation(libs.jackson.yaml) // YAMLFactory
-    implementation(libs.j2html)
+    implementation(platform(libs.jdbi.bom))
+    implementation(libs.jdbi.core)
     implementation(libs.jsoup)
+    implementation(libs.mariadb.client)
     implementation(libs.slf4j.api)
 
     runtimeOnly(libs.slf4j.simple)
