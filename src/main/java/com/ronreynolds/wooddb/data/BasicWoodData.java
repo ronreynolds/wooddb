@@ -1,5 +1,6 @@
 package com.ronreynolds.wooddb.data;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.ronreynolds.util.jackson.ObjectMappers;
 
@@ -24,5 +25,9 @@ public record BasicWoodData(
 
     public static List<BasicWoodData> loadYaml(File woodDataFile) throws IOException {
         return ObjectMappers.yamlMapper().readerFor(DATA_LIST).readValue(woodDataFile);
+    }
+
+    public static BasicWoodData loadYaml(String yaml) throws JsonProcessingException {
+        return ObjectMappers.yamlMapper().readerFor(BasicWoodData.class).readValue(yaml);
     }
 }
