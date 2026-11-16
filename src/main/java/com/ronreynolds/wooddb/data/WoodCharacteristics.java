@@ -19,18 +19,18 @@ import java.util.List;
 // based on the classification key in [Identification of Central American, Mexican, and Caribbean Woods](https://research.fs.usda.gov/download/treesearch/64547.pdf)
 // one concern is this contains hardwood properties that don't apply to softwood (and vice versa); might want to create 2 types
 // to save on wasted ref space
-public record WoodCharacteristics (
-   WoodType type,
-   boolean resinCanals,
-   GrowthRingTransition growthRingTransition,
-   ParenchymaType axialParenchyma,
-   RingType growthRings,
-   VesselArrangement vesselArrangement,
-   VesselContents vesselContents,
-   VesselSize vesselSize,
-   RayType rays,
-   Quantity growthRingsPerCentimeter
-){
+public record WoodCharacteristics(
+        WoodType type,
+        boolean resinCanals,
+        GrowthRingTransition growthRingTransition,
+        ParenchymaType axialParenchyma,
+        RingType growthRings,
+        VesselArrangement vesselArrangement,
+        VesselContents vesselContents,
+        VesselSize vesselSize,
+        RayType rays,
+        Quantity growthRingsPerCentimeter
+) {
     private static final TypeReference<List<WoodCharacteristics>> DATA_LIST = new TypeReference<>() {
     };
 

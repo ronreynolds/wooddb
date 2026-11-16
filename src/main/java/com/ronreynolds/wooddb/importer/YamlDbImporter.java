@@ -8,7 +8,6 @@ import org.jdbi.v3.core.statement.PreparedBatch;
 
 import java.io.File;
 import java.io.IOException;
-import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -17,19 +16,19 @@ import java.util.List;
 @Slf4j
 public class YamlDbImporter {
     private static final String COMBINED_WOOD_DATA = "combined-wood-data.yaml";
-    private static final int BATCH_SIZE = 1;
+    private static final int    BATCH_SIZE         = 1;
 
     public static void main(String[] args) throws IOException {
-        File combinedWoodDataFile = new File(COMBINED_WOOD_DATA);
-        List<CombinedWoodData> woodDataList = CombinedWoodData.loadYaml(combinedWoodDataFile);
+        File                   combinedWoodDataFile = new File(COMBINED_WOOD_DATA);
+        List<CombinedWoodData> woodDataList         = CombinedWoodData.loadYaml(combinedWoodDataFile);
         log.info("loaded {} wood data records from {}", woodDataList.size(), combinedWoodDataFile.getAbsolutePath());
 
         Jdbi jdbi = Jdbi.create(System.getenv("WOOD_DB_URL"), System.getenv("WOOD_DB_USER"), System.getenv("WOOD_DB_PASSWORD"));
         log.info("connected to database");
 
         jdbi.useHandle(handle -> {
-            PreparedBatch batch = DbTables.woodYamlImport.prepareBatchInsert(handle);
-            int batchSize = 0;
+            PreparedBatch batch     = DbTables.woodYamlImport.prepareBatchInsert(handle);
+            int           batchSize = 0;
             for (CombinedWoodData item : woodDataList) {
                 log.info("adding {} to batch", item.scientificName());
                 DbTables.woodYamlImport.bindToBatch(batch, item);

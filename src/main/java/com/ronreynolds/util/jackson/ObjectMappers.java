@@ -24,13 +24,13 @@ import java.util.Map;
  * ObjectMappers are thread-safe if you don't mess with their config while they're in use; so the
  * idea is to provide a collection of pre-configured singleton ObjectMappers and a few utility
  * methods to make it easier to use them
- *
+ * <p>
  * copied from my own util-core library v2.0.2 to avoid pulling in the whole lib (for now and because it's not public)
  */
 public class ObjectMappers {
     public static class TypeSerDeTuple<T> {
-        final Class<T> type;
-        final StdSerializer<T> serializer;
+        final Class<T>                     type;
+        final StdSerializer<T>             serializer;
         final StdDeserializer<? extends T> deserializer;
 
         public TypeSerDeTuple(Class<T> type, StdSerializer<T> serializer, StdDeserializer<T> deserializer) {

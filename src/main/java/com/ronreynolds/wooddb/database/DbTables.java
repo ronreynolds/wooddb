@@ -22,7 +22,7 @@ public class DbTables {
             ),
             (batch, model) -> {
                 // since MariaDB doesn't support YAML as a native type, we'll store it as JSON
-                String modelAsJson    = ObjectMappers.toCompactJson(model);
+                String modelAsJson = ObjectMappers.toCompactJson(model);
                 String commonNamesTsv = model.metaData().commonNames() == null ? null :
                         String.join(",", model.metaData().commonNames());
 

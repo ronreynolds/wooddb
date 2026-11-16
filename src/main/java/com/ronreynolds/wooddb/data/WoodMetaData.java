@@ -1,7 +1,5 @@
 package com.ronreynolds.wooddb.data;
 
-import java.util.List;
-
 /**
  * based on the wood-database list of fields
  */
