@@ -14,6 +14,13 @@ public record TableMetadata<Model>(String tableName, List<String> columnNames, B
                         "values (" + columnNames.stream().map(name -> ":" + name).collect(Collectors.joining(",")) + ")"
         );
     }
+    public PreparedBatch prepareBatchReplace(Handle handle) {
+        return handle.prepareBatch(
+                "replace into " + tableName + " (" + String.join(",", columnNames) + ")" +
+                        "values (" + columnNames.stream().map(name -> ":" + name).collect(Collectors.joining(",")) + ")"
+        );
+    }
+
     public void bindToBatch(PreparedBatch batch, Model type) {
         bindFunction.accept(batch, type);
     }
