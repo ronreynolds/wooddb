@@ -1,13 +1,16 @@
 package com.ronreynolds.wooddb.database;
 
 import com.ronreynolds.util.jackson.ObjectMappers;
+import com.ronreynolds.util.string.Latin1;
 import com.ronreynolds.wooddb.data.CombinedWoodData;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 
 /**
  * schema info about all tables in the wood_db
  */
+@Slf4j
 public class DbTables {
     public static final TableMetadata<CombinedWoodData> woodYamlImport = new TableMetadata<>(
             "wood_yaml_import",
@@ -21,49 +24,106 @@ public class DbTables {
                     "shrinkage", "porosity", "arrangement", "vessels", "parenchyma", "rays", "lookalikes", "notes"
             ),
             (batch, model) -> {
-                // since MariaDB doesn't support YAML as a native type, we'll store it as JSON
-                String modelAsJson = ObjectMappers.toCompactJson(model);
-                String commonNamesTsv = model.metaData().commonNames() == null ? null :
-                        String.join(",", model.metaData().commonNames());
+                String scientificName = Latin1.sanitize(model.scientificName());
+                String sourceJson     = Latin1.sanitize(ObjectMappers.toCompactJson(model));
+                String pageUrl        = Latin1.sanitize(model.basicData().pageUrl());
+                String imageUrl       = Latin1.sanitize(model.basicData().imageUrl());
+                String commonName     = Latin1.sanitize(model.basicData().commonName());
+                String binomial       = Latin1.sanitize(model.basicData().binomial());
 
-                batch
-                        .bind("latinBinomial", model.scientificName())
-                        .bind("sourceJson", modelAsJson)
-                        .bind("pageUrl", model.basicData().pageUrl())
-                        .bind("imageUrl", model.basicData().imageUrl())
-                        .bind("commonName", model.basicData().commonName())
-                        .bind("binomial", model.basicData().binomial())
-                        .bind("commonNamesTsv", commonNamesTsv)
-                        .bind("distribution", model.metaData().distribution())
-                        .bind("treeSize", model.metaData().treeSize())
-                        .bind("colorAndAppearance", model.metaData().colorAndAppearance())
-                        .bind("grainAndTexture", model.metaData().grainAndTexture())
-                        .bind("rotResistance", model.metaData().rotResistance())
-                        .bind("workability", model.metaData().workability())
-                        .bind("odor", model.metaData().odor())
-                        .bind("allergiesAndToxicity", model.metaData().allergiesAndToxicity())
-                        .bind("pricingAndAvailability", model.metaData().pricingAndAvailability())
-                        .bind("sustainability", model.metaData().sustainability())
-                        .bind("commonUses", model.metaData().commonUses())
-                        .bind("comments", model.metaData().comments())
-                        .bind("endGrainImage", model.images().endGrainImage())
-                        .bind("endGrain10xImage", model.images().endGrain10xImage())
-                        .bind("edgeGrainImage", model.images().edgeGrainImage())
-                        .bind("averageDryWeight", model.materialData().averageDryWeight())
-                        .bind("specificGravity", model.materialData().specificGravity())
-                        .bind("jankaHardness", model.materialData().jankaHardness())
-                        .bind("ruptureModulus", model.materialData().ruptureModulus())
-                        .bind("elasticModulus", model.materialData().elasticModulus())
-                        .bind("crushingStrength", model.materialData().crushingStrength())
-                        .bind("shrinkage", model.materialData().shrinkage())
-                        .bind("porosity", model.macroscopic().porosity())
-                        .bind("arrangement", model.macroscopic().arrangement())
-                        .bind("vessels", model.macroscopic().vessels())
-                        .bind("parenchyma", model.macroscopic().parenchyma())
-                        .bind("rays", model.macroscopic().rays())
-                        .bind("lookalikes", model.macroscopic().lookalikes())
-                        .bind("notes", model.macroscopic().notes())
+                String commonNames = model.metaData().commonNames() == null ? null :
+                        Latin1.sanitize(String.join(",", model.metaData().commonNames()));
+                String distribution           = Latin1.sanitize(model.metaData().distribution());
+                String treeSize               = Latin1.sanitize(model.metaData().treeSize());
+                String colorAndAppearance     = Latin1.sanitize(model.metaData().colorAndAppearance());
+                String grainAndTexture        = Latin1.sanitize(model.metaData().grainAndTexture());
+                String rotResistance          = Latin1.sanitize(model.metaData().rotResistance());
+                String workability            = Latin1.sanitize(model.metaData().workability());
+                String odor                   = Latin1.sanitize(model.metaData().odor());
+                String allergiesAndToxicity   = Latin1.sanitize(model.metaData().allergiesAndToxicity());
+                String pricingAndAvailability = Latin1.sanitize(model.metaData().pricingAndAvailability());
+                String sustainability         = Latin1.sanitize(model.metaData().sustainability());
+                String commonUses             = Latin1.sanitize(model.metaData().commonUses());
+                String comments               = Latin1.sanitize(model.metaData().comments());
+
+                String endGrainImage          = Latin1.sanitize(model.images().endGrainImage());
+                String endGrain10xImage       = Latin1.sanitize(model.images().endGrain10xImage());
+                String edgeGrainImage         = Latin1.sanitize(model.images().edgeGrainImage());
+
+                String averageDryWeight       = Latin1.sanitize(model.materialData().averageDryWeight());
+                String specificGravity        = Latin1.sanitize(model.materialData().specificGravity());
+                String jankaHardness          = Latin1.sanitize(model.materialData().jankaHardness());
+                String ruptureModulus         = Latin1.sanitize(model.materialData().ruptureModulus());
+                String elasticModulus         = Latin1.sanitize(model.materialData().elasticModulus());
+                String crushingStrength       = Latin1.sanitize(model.materialData().crushingStrength());
+                String shrinkage              = Latin1.sanitize(model.materialData().shrinkage());
+
+                String notes                  = Latin1.sanitize(model.macroscopic().notes());
+                String lookalikes             = Latin1.sanitize(model.macroscopic().lookalikes());
+                String porosity               = Latin1.sanitize(model.macroscopic().porosity());
+                String arrangement            = Latin1.sanitize(model.macroscopic().arrangement());
+                String vessels                = Latin1.sanitize(model.macroscopic().vessels());
+                String parenchyma             = Latin1.sanitize(model.macroscopic().parenchyma());
+                String rays                   = Latin1.sanitize(model.macroscopic().rays());
+
+                log.info("lengths for {}:\nscientificName:{} json:{} pageUrl:{} imageUrl:{} commonName:{} binomial:{} " +
+                                "commonNames:{} distribution:{} treeSize:{} colorAndAppearance:{} grainAndTexture:{} " +
+                                "rotResistance:{} workability:{} odor:{} allergiesAndToxicity:{} pricingAndAvailability:{} " +
+                                "sustainability:{} commonUses:{} comments:{} endGrainImage:{} endGrain10xImage:{} " +
+                                "edgeGrainImage:{} averageDryWeight:{} specificGravity:{} jankaHardness:{} ruptureModulus:{} " +
+                                "elasticModulus:{} crushingStrength:{} shrinkage:{} porosity:{} arrangement:{} vessels:{} " +
+                                "parenchyma:{} rays:{} lookalikes:{} notes:{}",
+                        scientificName, length(scientificName), length(sourceJson), length(pageUrl), length(imageUrl),
+                        length(commonName), length(binomial), length(commonNames), length(distribution), length(treeSize),
+                        length(colorAndAppearance), length(grainAndTexture), length(rotResistance), length(workability),
+                        length(odor), length(allergiesAndToxicity), length(pricingAndAvailability), length(sustainability),
+                        length(commonUses), length(comments), length(endGrainImage), length(endGrain10xImage),
+                        length(edgeGrainImage), length(averageDryWeight), length(specificGravity), length(jankaHardness),
+                        length(ruptureModulus), length(elasticModulus), length(crushingStrength), length(shrinkage),
+                        length(porosity), length(arrangement), length(vessels), length(parenchyma), length(rays),
+                        length(lookalikes), length(notes));
+
+                batch.bind("latinBinomial", scientificName)
+                        .bind("sourceJson", sourceJson)
+                        .bind("pageUrl", pageUrl)
+                        .bind("imageUrl", imageUrl)
+                        .bind("commonName", commonName)
+                        .bind("binomial", binomial)
+                        .bind("commonNamesTsv", commonNames)
+                        .bind("distribution", distribution)
+                        .bind("treeSize", treeSize)
+                        .bind("colorAndAppearance", colorAndAppearance)
+                        .bind("grainAndTexture", grainAndTexture)
+                        .bind("rotResistance", rotResistance)
+                        .bind("workability", workability)
+                        .bind("odor", odor)
+                        .bind("allergiesAndToxicity", allergiesAndToxicity)
+                        .bind("pricingAndAvailability", pricingAndAvailability)
+                        .bind("sustainability", sustainability)
+                        .bind("commonUses", commonUses)
+                        .bind("comments", comments)
+                        .bind("endGrainImage", endGrainImage)
+                        .bind("endGrain10xImage", endGrain10xImage)
+                        .bind("edgeGrainImage", edgeGrainImage)
+                        .bind("averageDryWeight", averageDryWeight)
+                        .bind("specificGravity", specificGravity)
+                        .bind("jankaHardness", jankaHardness)
+                        .bind("ruptureModulus", ruptureModulus)
+                        .bind("elasticModulus", elasticModulus)
+                        .bind("crushingStrength", crushingStrength)
+                        .bind("shrinkage", shrinkage)
+                        .bind("porosity", porosity)
+                        .bind("arrangement", arrangement)
+                        .bind("vessels", vessels)
+                        .bind("parenchyma", parenchyma)
+                        .bind("rays", rays)
+                        .bind("lookalikes", lookalikes)
+                        .bind("notes", notes)
                         .add();
             }
     );
+
+    private static Integer length(final CharSequence cs) {
+        return cs == null ? null : cs.length();
+    }
 }
