@@ -27,12 +27,13 @@ public class YamlDbImporter {
         log.info("connected to database");
 
         jdbi.useHandle(handle -> {
-            PreparedBatch batch     = DbTables.woodYamlImport.prepareBatchInsert(handle);
+            // use replace-into to avoid duplicate key errors if we re-run the import
+            PreparedBatch batch     = DbTables.woodYamlImport.prepareBatchReplace(handle);
             int           batchSize = 0;
             for (CombinedWoodData item : woodDataList) {
                 log.info("adding {} to batch", item.scientificName());
                 DbTables.woodYamlImport.bindToBatch(batch, item);
-                if (batchSize++ == BATCH_SIZE) {
+                if (++batchSize == BATCH_SIZE) {
                     log.info("executing batch insert");
                     try {
                         batch.execute();
