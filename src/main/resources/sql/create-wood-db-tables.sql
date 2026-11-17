@@ -56,41 +56,93 @@ create table wood_yaml_import (
 
 -- information about a species group
 create table taxon (
-    id          int primary key auto_increment,
+    id          int auto_increment primary key,
     rank        enum('family','genus','species') not null,
-    name        varchar(255) character set latin1 not null,
+    name        varchar(255) not null,
     parentId    int null references taxon(id),
-    acceptedName varchar(255) character set latin1 null,  -- for synonyms at any rank
+    acceptedName varchar(255) null,  -- for synonyms at any rank
     unique key uq_taxon (name)
 );
 -- information about a single wood species
 create table species (
-    id              bigint unsigned not null auto_increment,
-    latinBinomial   varchar(255) unique not null,
-    primary key (id)
+    id              bigint unsigned not null auto_increment primary key,
+    latinBinomial   varchar(255) unique not null
 );
 
 -- other names by which a species is known; trade or common name or both; most likely regional
 create table species_alias (
-    id          bigint unsigned not null auto_increment,
+    id          bigint unsigned not null auto_increment primary key,
     speciesId   bigint unsigned not null,
     name        varchar(255)    not null,
     type        varchar(100)    not null,
     -- indexes and constraints
-    primary key (id),
     key idx_name (name),
     key idx_species (speciesId),
     constraint fk_names_species foreign key (speciesId) references species(id) on delete cascade
 );
 
-
 create table species_distribution (
-    id          bigint unsigned not null auto_increment,
+    id          bigint unsigned not null auto_increment primary key,
     speciesId   bigint unsigned not null,
     distribution varchar(255) not null,
     -- indexes and constraints
-    primary key (id),
     key idx_distribution (distribution),
     key idx_species (speciesId),
     constraint fk_distribution_species foreign key (speciesId) references species(id) on delete cascade
 );
+
+create table porosity (
+    id int auto_increment primary key,
+    name char(20) not null
+);
+insert into porosity (name) values ('diffuse-porous'), ('ring-porous'), ('semi-ring-porous');
+
+create table vessel_arrangement (
+    id int auto_increment primary key,
+    name char(20) not null
+);
+insert into vessel_arrangement (name) 
+    values ('chains'), ('clusters'), ('dendritic'), ('diagonal/radial'), ('exclusively solitary'), ('radial multiples'), ('solitary and radial multiples'), ('tangential bands');
+
+create table vessel_size (
+    id int auto_increment primary key,
+    name char(20) not null
+);
+insert into vessel_size (name) values ('small'), ('medium'), ('large'), ('very large');
+
+create table vessel_frequency (
+    id int auto_increment primary key,
+    name char(20) not null
+);
+insert into vessel_frequency (name) values ('very few'), ('few'), ('moderately numerous'), ('numerous'), ('very numerous');
+
+create table vessel_contents (
+    id int auto_increment primary key,
+    name char(20) not null
+);
+insert into vessel_contents (name) values ('dark-colored deposits'), ('light-colored deposits'), ('reddish deposits'), ('reddish/brown deposits'), ('tyloses');
+
+create table parenchyma (
+    id int auto_increment primary key,
+    name char(20) not null
+);
+insert into parenchyma (name) 
+    values ('diffuse-in-aggregates'), ('vasicentric'), ('winged'), ('lozenge'), ('confluent'), ('unilateral'), ('banded'), ('marginal'), ('reticulate'), ('scalariform');
+
+create table ray_width (
+    id int auto_increment primary key,
+    name char(20) not null
+);
+insert into ray_width (name) values ('aggregate rays present'), ('medium'), ('narrow'), ('noded rays present'), ('very wide'), ('wide');
+
+create table ray_spacing (
+    id int auto_increment primary key,
+    name char(20) not null
+);
+insert into ray_spacing (name) values ('wide'), ('normal'), ('close');
+
+create table misc_property (
+    id int auto_increment primary key,
+    name char(20) not null
+);
+insert into misc_property (name) values ('distinctive odor'), ('froth test positive'), ('uv fluorescent');
