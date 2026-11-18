@@ -5,7 +5,8 @@ use wood_db;
 -- only slightly cooked import table; consumed to populate all other tables by other ETL processes
 drop table if exists wood_yaml_import;
 create table wood_yaml_import (
-    latinBinomial           varchar(500) unique not null comment 'YAML map key (so must be unique)',
+    id                      int auto_increment primary key,
+    latinBinomial           varchar(500) not null comment 'YAML map key (but not unique)',
     importDate              datetime not null default current_timestamp,
     sourceJson              text not null comment 'JSON from YAML data for the wood species',
     -- extracted fields
@@ -44,9 +45,7 @@ create table wood_yaml_import (
     lookalikes              varchar(1000),
     notes                   varchar(1000),
     -- bookkeeping
-    imported                boolean not null default false,
-    -- indexes and constraints
-    primary key (latinBinomial)
+    processed               boolean not null default false
 );
 
 -- TODO - create derivative tables with better normalization
