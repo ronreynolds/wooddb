@@ -1,5 +1,6 @@
 package com.ronreynolds.wooddb.importer;
 
+import com.ronreynolds.util.commandline.CommandLines;
 import com.ronreynolds.wooddb.data.CombinedWoodData;
 import com.ronreynolds.wooddb.database.DbTables;
 import lombok.extern.slf4j.Slf4j;
@@ -8,7 +9,6 @@ import org.jdbi.v3.core.statement.PreparedBatch;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
 
 /**
  * imports the combined-wood-data YAML file into a database table for subsequent processing into a relational schema
@@ -16,24 +16,49 @@ import java.util.List;
 @Slf4j
 public class YamlDbImporter {
     private static final String COMBINED_WOOD_DATA = "combined-wood-data.yaml";
-    private static final int    BATCH_SIZE         = 1;
+    private static final int    DEFAULT_BATCH_SIZE = 1;
 
     public static void main(String[] args) throws IOException {
-        File                   combinedWoodDataFile = new File(COMBINED_WOOD_DATA);
-        List<CombinedWoodData> woodDataList         = CombinedWoodData.loadYaml(combinedWoodDataFile);
+        // gather cmd-line args (bound to a thread-local map for easy access throughout the app)
+        CommandLines.argsToMap(args);
+        if (CommandLines.getOrDefault("help", false)) {
+            System.out.println("""
+                        imports the combined-wood-data.yaml file into a database table for subsequent processing
+                        ARGS:
+                        --help           : print this help message
+                        --truncate       : truncate import table before import (default: false)
+                        --batchSize <n>  : number of records to add in a single batch (default: 1)
+                        --woodData <path>: path to the combined-wood-data.yaml file (default: combined-wood-data.yaml)
+                        --logSizes       : log the size of each record's fields before inserting (default: false)
+                    """);
+
+            return;
+        }
+
+        boolean truncateBeforeImport = CommandLines.getOrDefault("truncate", false);
+        int     maxBatchSize         = CommandLines.getOrDefault("batchSize", DEFAULT_BATCH_SIZE);
+        String  combinedWoodDataPath = CommandLines.getOrDefault("woodData", COMBINED_WOOD_DATA);
+
+        File combinedWoodDataFile = new File(combinedWoodDataPath);
+        var  woodDataList         = CombinedWoodData.loadYaml(combinedWoodDataFile);
         log.info("loaded {} wood data records from {}", woodDataList.size(), combinedWoodDataFile.getAbsolutePath());
 
         Jdbi jdbi = Jdbi.create(System.getenv("WOOD_DB_URL"), System.getenv("WOOD_DB_USER"), System.getenv("WOOD_DB_PASSWORD"));
         log.info("connected to database");
 
+        if (truncateBeforeImport) {
+            log.info("truncating {} table before import", DbTables.woodYamlImport.tableName());
+            jdbi.useHandle(handle -> handle.execute("truncate table " + DbTables.woodYamlImport.tableName()));
+        }
+
         jdbi.useHandle(handle -> {
             // use replace-into to avoid duplicate key errors if we re-run the import
-            PreparedBatch batch     = DbTables.woodYamlImport.prepareBatchReplace(handle);
+            PreparedBatch batch     = DbTables.woodYamlImport.prepareBatchInsert(handle);
             int           batchSize = 0;
             for (CombinedWoodData item : woodDataList) {
                 log.info("adding {} to batch", item.scientificName());
                 DbTables.woodYamlImport.bindToBatch(batch, item);
-                if (++batchSize == BATCH_SIZE) {
+                if (++batchSize == maxBatchSize) {
                     log.info("executing batch insert");
                     try {
                         batch.execute();
