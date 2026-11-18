@@ -22,6 +22,8 @@ fun DependencyHandlerScope.lombok() {
 }
 
 dependencies {
+    implementation(libs.apache.commons.lang3)
+    implementation(libs.guava)
     implementation(libs.j2html)
     implementation(libs.jackson.core)
     implementation(libs.jackson.databind)
