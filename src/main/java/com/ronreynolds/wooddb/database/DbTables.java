@@ -1,5 +1,6 @@
 package com.ronreynolds.wooddb.database;
 
+import com.ronreynolds.util.commandline.CommandLines;
 import com.ronreynolds.util.jackson.ObjectMappers;
 import com.ronreynolds.util.string.Latin1;
 import com.ronreynolds.wooddb.data.CombinedWoodData;
@@ -66,22 +67,24 @@ public class DbTables {
                 String parenchyma             = Latin1.sanitize(model.macroscopic().parenchyma());
                 String rays                   = Latin1.sanitize(model.macroscopic().rays());
 
-                log.info("lengths for {}:\nscientificName:{} json:{} pageUrl:{} imageUrl:{} commonName:{} binomial:{} " +
-                                "commonNames:{} distribution:{} treeSize:{} colorAndAppearance:{} grainAndTexture:{} " +
-                                "rotResistance:{} workability:{} odor:{} allergiesAndToxicity:{} pricingAndAvailability:{} " +
-                                "sustainability:{} commonUses:{} comments:{} endGrainImage:{} endGrain10xImage:{} " +
-                                "edgeGrainImage:{} averageDryWeight:{} specificGravity:{} jankaHardness:{} ruptureModulus:{} " +
-                                "elasticModulus:{} crushingStrength:{} shrinkage:{} porosity:{} arrangement:{} vessels:{} " +
-                                "parenchyma:{} rays:{} lookalikes:{} notes:{}",
-                        scientificName, length(scientificName), length(sourceJson), length(pageUrl), length(imageUrl),
-                        length(commonName), length(binomial), length(commonNames), length(distribution), length(treeSize),
-                        length(colorAndAppearance), length(grainAndTexture), length(rotResistance), length(workability),
-                        length(odor), length(allergiesAndToxicity), length(pricingAndAvailability), length(sustainability),
-                        length(commonUses), length(comments), length(endGrainImage), length(endGrain10xImage),
-                        length(edgeGrainImage), length(averageDryWeight), length(specificGravity), length(jankaHardness),
-                        length(ruptureModulus), length(elasticModulus), length(crushingStrength), length(shrinkage),
-                        length(porosity), length(arrangement), length(vessels), length(parenchyma), length(rays),
-                        length(lookalikes), length(notes));
+                if (CommandLines.getOrDefault("logSizes", false)) {
+                    log.info("lengths for {}:\nscientificName:{} json:{} pageUrl:{} imageUrl:{} commonName:{} binomial:{} " +
+                                    "commonNames:{} distribution:{} treeSize:{} colorAndAppearance:{} grainAndTexture:{} " +
+                                    "rotResistance:{} workability:{} odor:{} allergiesAndToxicity:{} pricingAndAvailability:{} " +
+                                    "sustainability:{} commonUses:{} comments:{} endGrainImage:{} endGrain10xImage:{} " +
+                                    "edgeGrainImage:{} averageDryWeight:{} specificGravity:{} jankaHardness:{} ruptureModulus:{} " +
+                                    "elasticModulus:{} crushingStrength:{} shrinkage:{} porosity:{} arrangement:{} vessels:{} " +
+                                    "parenchyma:{} rays:{} lookalikes:{} notes:{}",
+                            scientificName, length(scientificName), length(sourceJson), length(pageUrl), length(imageUrl),
+                            length(commonName), length(binomial), length(commonNames), length(distribution), length(treeSize),
+                            length(colorAndAppearance), length(grainAndTexture), length(rotResistance), length(workability),
+                            length(odor), length(allergiesAndToxicity), length(pricingAndAvailability), length(sustainability),
+                            length(commonUses), length(comments), length(endGrainImage), length(endGrain10xImage),
+                            length(edgeGrainImage), length(averageDryWeight), length(specificGravity), length(jankaHardness),
+                            length(ruptureModulus), length(elasticModulus), length(crushingStrength), length(shrinkage),
+                            length(porosity), length(arrangement), length(vessels), length(parenchyma), length(rays),
+                            length(lookalikes), length(notes));
+                }
 
                 batch.bind("latinBinomial", scientificName)
                         .bind("sourceJson", sourceJson)
