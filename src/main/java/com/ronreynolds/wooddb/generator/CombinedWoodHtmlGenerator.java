@@ -3,7 +3,7 @@ package com.ronreynolds.wooddb.generator;
 import com.ronreynolds.wooddb.data.CombinedWoodData;
 import j2html.Config;
 import lombok.extern.slf4j.Slf4j;
-import org.jsoup.internal.StringUtil;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -102,7 +102,7 @@ public class CombinedWoodHtmlGenerator {
     }
 
     private static String imageToLocalPath(String imageUrl) {
-        if (StringUtil.isBlank(imageUrl)) {
+        if (StringUtils.isBlank(imageUrl)) {
             return "";
         }
         // https://www.wood-database.com/wp-content/uploads/alstonia-scholaris4.jpg -> <IMAGE_DIR>/alstonia-scholaris4.jpg

@@ -7,9 +7,9 @@ import com.ronreynolds.wooddb.data.WoodAnatomy;
 import com.ronreynolds.wooddb.data.WoodImages;
 import com.ronreynolds.wooddb.data.WoodMetaData;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.helper.ValidationException;
-import org.jsoup.internal.StringUtil;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Evaluator;
@@ -185,10 +185,10 @@ public class WoodDataExtractor {
 
     static CombinedWoodData extractWoodData(BasicWoodData woodData, Document doc) {
         String scientificName = CSSPaths.scientificNameWithItalics.text(doc);   // look for this version first
-        if (StringUtil.isBlank(scientificName)) {
+        if (StringUtils.isBlank(scientificName)) {
             log.info("unable to find default scientific name; checking for italics version");
             scientificName = CSSPaths.scientificName.text(doc);
-            if (StringUtil.isBlank(scientificName)) {
+            if (StringUtils.isBlank(scientificName)) {
                 log.warn("failed to find scientific name in wood-specific page; falling back to BasicWoodData");
                 scientificName = woodData.binomial();
             }
