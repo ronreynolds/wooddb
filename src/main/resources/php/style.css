@@ -1,0 +1,61 @@
+/* adds box-with-arrow image after links that open in new tab */
+a[target='_blank']::after {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    background-size: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewbox='0 0 12.2 12.2' width='14' height='14'%3E%3Cpath d='M5.7 0v1.5h4L4.5 6.7l1 1.1 5.3-5.2v3.9h1.4V0z'/%3E%3Cpath fill='none' d='M3.4 6.7l3-2.9H1.5v7h7V5.9l-3 2.9z'/%3E%3Cpath d='M8.5 5.9v4.9h-7v-7h4.9l1.5-1.6H0v10h10V4.4z'/%3E%3C/svg%3E");
+}
+
+/* default table styles */
+table, th, td {
+    table-layout: fixed;
+    padding: 5px 10px 5px;
+}
+th {
+    vertical-align: bottom;
+    text-align: left;
+}
+td {
+    text-align: right;
+    border: 1px dotted;
+    border-collapse: collapse;
+}
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+/* simple subclass styles */
+td.left         { text-align:left; }
+td.center       { text-align:center; }
+td.right        { text-align:right; }
+
+/* specific table styles */
+.counts table   { table-layout: fixed; width: 100px;}
+.counts th      { text-align:left; border:1px dotted; }
+.counts td      { text-align:right; border:1px dotted; }
+
+table.listings  { table-layout: auto; width: 100%; }
+.listings td    { text-align:left; vertical-align:top; }
+
+.sales table    { table-layout: auto; width: 100%; }
+.sales td       { text-align:left; vertical-align:top; }
+
+.binomial       { font-style: italic; }
+
+.thumb { width: 80px; height: 80px; object-fit: cover; border-radius: 4px; }
+.thumbs { display: flex; gap: 6px; }
+
+.images { display: flex; gap: 12px; flex-wrap: wrap; margin: 1rem 0; }
+.images figure { margin: 0; }
+.images img { width: 160px; height: 160px; object-fit: cover; border-radius: 6px; }
+.images figcaption { font-size: 0.8rem; color: #666; text-align: center; margin-top: 4px; }
+.meta { color: #888; font-size: 0.85rem; margin-top: 2rem; }
+.back { display: inline-block; margin-bottom: 1rem; }
+details { margin-top: 1.5rem; }
+summary { cursor: pointer; font-weight: 600; color: #555; }
+pre { background: #f8f8f8; padding: 12px; border-radius: 4px; overflow-x: auto; font-size: 0.8rem; }
+
