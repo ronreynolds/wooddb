@@ -20,7 +20,7 @@ th {
     text-align: left;
 }
 td {
-    text-align: right;
+    text-align: left;
     border: 1px dotted;
     border-collapse: collapse;
 }
@@ -32,17 +32,6 @@ tr:nth-child(even) {
 td.left         { text-align:left; }
 td.center       { text-align:center; }
 td.right        { text-align:right; }
-
-/* specific table styles */
-.counts table   { table-layout: fixed; width: 100px;}
-.counts th      { text-align:left; border:1px dotted; }
-.counts td      { text-align:right; border:1px dotted; }
-
-table.listings  { table-layout: auto; width: 100%; }
-.listings td    { text-align:left; vertical-align:top; }
-
-.sales table    { table-layout: auto; width: 100%; }
-.sales td       { text-align:left; vertical-align:top; }
 
 .binomial       { font-style: italic; }
 
@@ -59,3 +48,9 @@ details { margin-top: 1.5rem; }
 summary { cursor: pointer; font-weight: 600; color: #555; }
 pre { background: #f8f8f8; padding: 12px; border-radius: 4px; overflow-x: auto; font-size: 0.8rem; }
 
+img {
+    width: 400px;
+    height: 400px;
+    object-fit: none;
+    object-position: center;
+}
