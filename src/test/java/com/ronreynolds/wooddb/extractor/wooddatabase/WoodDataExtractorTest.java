@@ -39,6 +39,16 @@ class WoodDataExtractorTest {
     }
 
     @Test
+    void whiteOakShrinkage_notBlank() {
+        Document doc = assertDoesNotThrow(() -> WoodDataExtractor.createDocument(new File(
+                "src/main/resources/source-sites/wood-database/wood-pages/white-oak.html")));
+        CombinedWoodData data = WoodDataExtractor.extractWoodData(BASIC_DATA, doc);
+        assertThat(data.materialData().shrinkage())
+                .isNotBlank()
+                .isEqualTo("Radial: 5.6%, Tangential: 10.5% Volumetric: 16.3%, T/R Ratio: 1.9");
+    }
+
+    @Test
     void extractWoodDataFromFile_works() {
         Document         doc  = assertDoesNotThrow(() -> WoodDataExtractor.createDocument(new File(TEST_FILE_PATH)));
         CombinedWoodData data = WoodDataExtractor.extractWoodData(BASIC_DATA, doc);
