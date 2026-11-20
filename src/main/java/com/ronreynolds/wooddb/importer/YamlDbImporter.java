@@ -59,11 +59,11 @@ public class YamlDbImporter {
                 log.info("adding {} to batch", item.scientificName());
                 DbTables.woodYamlImport.bindToBatch(batch, item);
                 if (++batchSize == maxBatchSize) {
-                    log.info("executing batch insert");
+                    log.info("inserting batch of {}", batch.size());
                     try {
                         batch.execute();
                     } catch (Exception sex) {
-                        log.error("failed to insert {}", item);
+                        // logging item here is misleading; it's part of a batch that failed and not necessarily the cause
                         log.error("failure: {}", sex, sex);
                         throw sex;  // leave it fatal
                     }
@@ -71,7 +71,7 @@ public class YamlDbImporter {
                 }
             }
             if (batchSize > 0) {
-                log.info("executing final batch insert");
+                log.info("inserting final batch of {}", batch.size());
                 batch.execute();
             }
         });
