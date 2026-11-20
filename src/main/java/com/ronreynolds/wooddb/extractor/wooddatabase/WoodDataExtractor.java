@@ -32,6 +32,7 @@ public class WoodDataExtractor {
     private static final Pattern TRIM_COMMA                 = Pattern.compile("\\s*,\\s*");
     private static final Pattern WOOD_DB_URL_PATTERN        = Pattern.compile("https://www.wood-database.com/(.*?)/");
     private static final Pattern WOOD_DB_LOCAL_FILE_PATTERN = Pattern.compile("./Wood Filter _ The Wood Database_files/(.*?)");
+    private static final Pattern NO_DATA_AVAILABLE          = Pattern.compile("No data available\\.?†?\\*?");
 
     // the CSS path values used to find all the bits within the HTML
     private enum CSSPaths {
@@ -120,7 +121,12 @@ public class WoodDataExtractor {
                 log.info("unable to find {}", cssPath);
                 return text;
             }
-            return text.trim();
+            text = text.trim();
+            // filter out the "No data available." and the version with the little footnote marker that appears on some pages
+            if (NO_DATA_AVAILABLE.matcher(text).matches()) {
+                text = null;
+            }
+            return text;
         }
         String[] textArray(Document doc) {
             return select(doc).map(element -> TRIM_COMMA.split(getTextMethod.apply(element).trim())).orElse(null);
@@ -132,11 +138,7 @@ public class WoodDataExtractor {
         private static Function<Element, String> trimPrefixTextMethod(String prefixToTrim) {
             return e -> {
                 String text = e.text();
-                if (text.startsWith(prefixToTrim)) {
-                    return text.substring(prefixToTrim.length()).trim();
-                } else {
-                    return text.trim();
-                }
+                return text.startsWith(prefixToTrim) ? text.substring(prefixToTrim.length()) : text;
             };
         }
 
@@ -145,10 +147,25 @@ public class WoodDataExtractor {
          */
         private static Function<Element, String> withNextSiblingTextMethod(String siblingTagName) {
             return e -> {
-                StringBuilder buf     = new StringBuilder(e.ownText());
+                String text = e.ownText();
+                if (NO_DATA_AVAILABLE.matcher(text).matches()) {
+                    // early exit if the main element has "No data available" text; don't bother checking the sibling
+                    return text;
+                }
+                StringBuilder buf     = new StringBuilder(text);
                 Element       sibling = e.nextElementSibling();
                 if (sibling != null && sibling.tagName().equals(siblingTagName)) {
                     buf.append(" ").append(sibling.ownText());
+                } else {
+                    for (Element child : e.children()) {
+                        if (child.tagName().equals("span") && child.className().equals("scrunchie")) {
+                            // because of <span class="scrunchie"> elements in White Oak's shrinkage this is going to get weird
+                            buf.append(" ").append(child.ownText());
+                        } else if (child.tagName().equals("a")) {
+                            // and Hickory's shrinkage contains an <a> to another wood and we want that wood's name
+                            buf.append(" ").append(child.ownText());
+                        }
+                    }
                 }
                 return buf.toString();
             };
