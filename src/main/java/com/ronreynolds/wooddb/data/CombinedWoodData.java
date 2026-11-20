@@ -19,8 +19,12 @@ public record CombinedWoodData(
         WoodAnatomy macroscopic) {
 
     public String commonNames() {
-        return String.join(", ", metaData.commonNames() == null ? new String[0] : metaData.commonNames());
+        return String.join(", ", commonNamesArray());
     }
+    public String[] commonNamesArray() {
+        return metaData.commonNames() != null ? metaData.commonNames() : new String[0];
+    }
+
     public String edgeGrainUrl() {
         return images.edgeGrainImage();
     }
