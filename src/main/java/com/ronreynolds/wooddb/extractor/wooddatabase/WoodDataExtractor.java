@@ -37,7 +37,9 @@ public class WoodDataExtractor {
     private enum CSSPaths {
         // MaterialData
         commonNames("p:has(a[href='https://www.wood-database.com/wood-articles/common-name/'])"),
-        scientificName("p:has(a[href='https://www.wood-database.com/wood-articles/scientific-name/'])"),
+        // can contain child tags and we want all the text
+        scientificName("p:has(a[href='https://www.wood-database.com/wood-articles/scientific-name/'])",
+                trimPrefixTextMethod("Scientific Name:")),
         scientificNameWithItalics("p:has(a[href='https://www.wood-database.com/wood-articles/scientific-name/']) > i"),
 
         distribution("p:has(a[href='https://www.wood-database.com/wood-articles/distribution/'])"),
@@ -113,10 +115,12 @@ public class WoodDataExtractor {
             return Optional.ofNullable(doc.selectFirst(eval));
         }
         String text(Document doc) {
-            return select(doc).map(getTextMethod).orElseGet(() -> {
+            String text = select(doc).map(getTextMethod).orElse(null);
+            if (text == null) {
                 log.info("unable to find {}", cssPath);
-                return null;
-            });
+                return text;
+            }
+            return text.trim();
         }
         String[] textArray(Document doc) {
             return select(doc).map(element -> TRIM_COMMA.split(getTextMethod.apply(element).trim())).orElse(null);

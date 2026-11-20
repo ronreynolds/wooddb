@@ -4393,7 +4393,7 @@
     rays: null
     lookalikes: null
     notes: null
-- scientificName: "Brosimum rubescens"
+- scientificName: "Brosimum rubescens (syn. B. paraense)"
   basicData:
     pageUrl: "https://www.wood-database.com/bloodwood/"
     imageUrl: "./Wood Filter _ The Wood Database_files/bloodwood.jpg"
@@ -5722,7 +5722,7 @@
     rays: null
     lookalikes: null
     notes: null
-- scientificName: "Allocasuarina luehmannii (formerly"
+- scientificName: "Allocasuarina luehmannii (formerly Casuarina luehmannii)"
   basicData:
     pageUrl: "https://www.wood-database.com/australian-buloke/"
     imageUrl: "./Wood Filter _ The Wood Database_files/allocasuarina-luehmannii-250x167.jpg"
@@ -6975,7 +6975,7 @@
     commonNames:
     - "Southern Redcedar"
     distribution: "Southeastern United States"
-    treeSize: "50 ft (15 m) tall, 2 ft (.6 m) trunk diameter "
+    treeSize: "50 ft (15 m) tall, 2 ft (.6 m) trunk diameter"
     colorAndAppearance: "No data available."
     grainAndTexture: "No data available."
     rotResistance: "No data available."
@@ -7002,7 +7002,7 @@
     ruptureModulus: "9,400 lb/in (64.8 MPa)"
     elasticModulus: "1,170,000 lb/in (8.07 GPa)"
     crushingStrength: "6,570 lb/in (45.3 MPa)"
-    shrinkage: "Radial: 2.2%, Tangential: 4.0%, Volumetric: 7.0%, T/R Ratio: 1.8 "
+    shrinkage: "Radial: 2.2%, Tangential: 4.0%, Volumetric: 7.0%, T/R Ratio: 1.8"
   macroscopic:
     porosity: null
     arrangement: null
@@ -7683,7 +7683,7 @@
     commonNames:
     - "American Chestnut"
     distribution: "Eastern United States"
-    treeSize: "100-120 ft (30-37 m) tall, 5-7 ft (1.5-2.0 m) trunk diameter* "
+    treeSize: "100-120 ft (30-37 m) tall, 5-7 ft (1.5-2.0 m) trunk diameter*"
     colorAndAppearance: "Heartwood is a light to medium brown, darkening to a reddish\
       \ brown with age. Narrow sapwood is well-defined and is pale white to light\
       \ brown. Wormy Chestnut is also seen, which is chestnut that has been damaged\
@@ -9651,7 +9651,7 @@
     rays: null
     lookalikes: null
     notes: null
-- scientificName: "Alloxylon pinnatum (syn."
+- scientificName: "Alloxylon pinnatum (syn. Oreocallis pinnata)"
   basicData:
     pageUrl: "https://www.wood-database.com/dorrigo-waratah/"
     imageUrl: "./Wood Filter _ The Wood Database_files/alloxylon-pinnatum-250x167.jpg"
@@ -9708,7 +9708,8 @@
     rays: null
     lookalikes: null
     notes: null
-- scientificName: "Berlinia spp. and"
+- scientificName: "Berlinia spp. (B. auriculata, B. bracteosa, B. confusa, and B.\
+    \ grandiflora)"
   basicData:
     pageUrl: "https://www.wood-database.com/ebiara/"
     imageUrl: "./Wood Filter _ The Wood Database_files/berlinia-s.jpg"
@@ -10475,7 +10476,7 @@
     lookalikes: null
     notes: null
 - scientificName: "Ulmus × hollandica (Dutch Elm is a European elm hybrid, coming\
-    \ from x U. minor and/or a variety of other species)"
+    \ from U. glabra x U. minor and/or a variety of other species)"
   basicData:
     pageUrl: "https://www.wood-database.com/dutch-elm/"
     imageUrl: "./Wood Filter _ The Wood Database_files/wych-elm-s.jpg"
@@ -10533,7 +10534,7 @@
     rays: null
     lookalikes: null
     notes: null
-- scientificName: "Ulmus procera (sometimes treated as a synonym of )"
+- scientificName: "Ulmus procera (sometimes treated as a synonym of U. minor)"
   basicData:
     pageUrl: "https://www.wood-database.com/english-elm/"
     imageUrl: "./Wood Filter _ The Wood Database_files/english-elm-s.jpg"
@@ -11830,7 +11831,7 @@
     commonNames:
     - "White fir"
     distribution: "Mountainous regions of western United States"
-    treeSize: ", "
+    treeSize: ","
     colorAndAppearance: "Heartwood is usually white to reddish brown, with pale sapwood\
       \ that isn’t clearly distinguished from the heartwood."
     grainAndTexture: "Grain is straight, with a uniform medium-coarse texture."
@@ -13915,7 +13916,7 @@
     - "Chinese rosewood"
     - "海南黄花梨"
     distribution: null
-    treeSize: " .85, .88"
+    treeSize: ".85, .88"
     colorAndAppearance: "Has a uniform yellow to pinkish-brown color, with sapwood\
       \ indistinct from heartwood."
     grainAndTexture: "Fine texture and a straight or slightly interlocked grain."
@@ -15475,8 +15476,9 @@
     notes: "Queensland kauri has somewhat conspicuous reddish-colored rays, and also\
       \ exhibits a finely patterned ray fleck on quartersawn surfaces that’s not commonly\
       \ seen on softwoods."
-- scientificName: "Not a distinct species of kauri; trade name for that have been\
-    \ harvested from salt marshes and swamps in New Zealand’s North Island"
+- scientificName: "Botanical Designation: Not a distinct species of kauri; trade name\
+    \ for kauri trees (Agathis australis) that have been harvested from salt marshes\
+    \ and swamps in New Zealand’s North Island"
   basicData:
     pageUrl: "https://www.wood-database.com/swamp-kauri/"
     imageUrl: "./Wood Filter _ The Wood Database_files/agathis-australis-figured-250x167.jpg"
@@ -17032,7 +17034,7 @@
     ruptureModulus: "20,960 lb/in (144.5 MPa)*"
     elasticModulus: "2,494,000 lb/in (17.20 GPa)*"
     crushingStrength: "9,950 lb/in (68.6 MPa)*"
-    shrinkage: "Radial: 2.0%, Tangential: 4.7%, Volumetric: 6.8%, T/R Ratio: 2.4* "
+    shrinkage: "Radial: 2.0%, Tangential: 4.7%, Volumetric: 6.8%, T/R Ratio: 2.4*"
   macroscopic:
     porosity: null
     arrangement: null
@@ -19352,9 +19354,9 @@
     rays: null
     lookalikes: null
     notes: null
-- scientificName: "Not a distinct species of maple; describes a fungal discoloration\
-    \ caused by wood-boring ambrosia beetles. The majority of ambrosia maple is found\
-    \ in species of ."
+- scientificName: "Botanical Designation: Not a distinct species of maple; describes\
+    \ a fungal discoloration caused by wood-boring ambrosia beetles. The majority\
+    \ of ambrosia maple is found in species of soft maple."
   basicData:
     pageUrl: "https://www.wood-database.com/ambrosia-maple/"
     imageUrl: "./Wood Filter _ The Wood Database_files/acer-spp-ambrosia-250x167.jpg"
@@ -19470,9 +19472,9 @@
       \ Bigleaf maple tends to have more uniform medium-width rays, while hard maple\
       \ has a greater range of wide and narrow rays."
     notes: "None."
-- scientificName: "Not a distinct species of maple; considered a growth/grain anomaly.\
-    \ Although rare exceptions exist, birdseye maple is almost exclusively harvested\
-    \ from"
+- scientificName: "Botanical Designation: Not a distinct species of maple; considered\
+    \ a growth/grain anomaly. Although rare exceptions exist, birdseye maple is almost\
+    \ exclusively harvested from hard maple (Acer saccharum)."
   basicData:
     pageUrl: "https://www.wood-database.com/birdseye-maple/"
     imageUrl: "./Wood Filter _ The Wood Database_files/acer-spp-birdseye-250x167.jpg"
@@ -19586,8 +19588,8 @@
       \ per comments section above.) Can be separated from soft maple species according\
       \ to techniques in this article."
     notes: "None."
-- scientificName: "Not a distinct species of maple. Curly maple is considered a grain\
-    \ pattern that can be found in nearly all species."
+- scientificName: "Botanical Designation: Not a distinct species of maple. Curly maple\
+    \ is considered a grain pattern that can be found in nearly all Acer species."
   basicData:
     pageUrl: "https://www.wood-database.com/curly-maple/"
     imageUrl: "./Wood Filter _ The Wood Database_files/acer-spp-curly-250x167.jpg"
@@ -20064,9 +20066,10 @@
     rays: null
     lookalikes: null
     notes: null
-- scientificName: "Not a distinct species of maple; considered a growth/grain anomaly.\
-    \ Occurs most often in , but is also seen much less often in . The highest grades\
-    \ of quilted figure occur primarily in )."
+- scientificName: "Botanical Designation: Not a distinct species of maple; considered\
+    \ a growth/grain anomaly. Occurs most often in soft maples, but is also seen much\
+    \ less often in hard maple. The highest grades of quilted figure occur primarily\
+    \ in bigleaf maple (Acer macrophyllum)."
   basicData:
     pageUrl: "https://www.wood-database.com/quilted-maple/"
     imageUrl: "./Wood Filter _ The Wood Database_files/acer-spp-quilted-250x167.jpg"
@@ -20246,8 +20249,9 @@
       \ Silver maple tends to have more uniform medium-width rays, while hard maple\
       \ has a greater range of wide and narrow rays."
     notes: "None."
-- scientificName: "Not a distinct species of maple. Soft maple is a commercial term\
-    \ meant to differentiate the wood of some types of maple from"
+- scientificName: "Botanical Designation: Not a distinct species of maple. Soft maple\
+    \ is a commercial term meant to differentiate the wood of some types of maple\
+    \ from hard maple (Acer saccharum)."
   basicData:
     pageUrl: "https://www.wood-database.com/soft-maple/"
     imageUrl: "./Wood Filter _ The Wood Database_files/acer-pensylvanicum-250x167.jpg"
@@ -20295,8 +20299,8 @@
       \ such as striped maple (Acer pensylvanicum), however, it can usually be separated\
       \ from hard maple (A. saccharum)according to techniques in this article."
     notes: "None."
-- scientificName: "Not a distinct species of maple; spalting is a fungal discoloration\
-    \ caused by partially decayed wood."
+- scientificName: "Botanical Designation: Not a distinct species of maple; spalting\
+    \ is a fungal discoloration caused by partially decayed wood."
   basicData:
     pageUrl: "https://www.wood-database.com/spalted-maple/"
     imageUrl: "./Wood Filter _ The Wood Database_files/acer-spp-spalted-250x167.jpg"
@@ -24347,7 +24351,7 @@
     notes: "East African olive (Olea capensis) is a closely related species that is\
       \ very similar to O. welwitschii. Generally, the wood is about 20% heavier and\
       \ the pores may be slightly smaller in O. capensis."
-- scientificName: "Chionanthus ramiflorus (syn."
+- scientificName: "Chionanthus ramiflorus (syn. Olea paniculata)"
   basicData:
     pageUrl: "https://www.wood-database.com/queensland-olive/"
     imageUrl: "./Wood Filter _ The Wood Database_files/olea-paniculata-250x167.jpg"
@@ -25014,7 +25018,7 @@
     ruptureModulus: "19,950 lb/in (137.6 MPa)"
     elasticModulus: "2,262,000 lb/in (15.60 GPa)"
     crushingStrength: "10,190 lb/in (70.3 MPa)"
-    shrinkage: "Radial: ~5.5%, Tangential: ~5.5%, Volumetric: ~11.0%, T/R Ratio: ~1.0 "
+    shrinkage: "Radial: ~5.5%, Tangential: ~5.5%, Volumetric: ~11.0%, T/R Ratio: ~1.0"
   macroscopic:
     porosity: null
     arrangement: null
@@ -25085,7 +25089,7 @@
     ruptureModulus: "12,970 lb/in (89.4 MPa)"
     elasticModulus: "1,654,000 lb/in (11.41 GPa)"
     crushingStrength: "9,590 lb/in (66.2 MPa)"
-    shrinkage: "Radial: ~5.5%, Tangential: ~5.5%, Volumetric: ~11.0%, T/R Ratio: ~1.0 "
+    shrinkage: "Radial: ~5.5%, Tangential: ~5.5%, Volumetric: ~11.0%, T/R Ratio: ~1.0"
   macroscopic:
     porosity: null
     arrangement: null
@@ -29458,7 +29462,7 @@
     commonNames:
     - "Brazilian rosewood"
     distribution: "Brazil"
-    treeSize: ", "
+    treeSize: ","
     colorAndAppearance: "Brazilian rosewood can vary in color from a darker chocolate\
       \ brown to a lighter purplish or reddish brown, with darker contrasting streaks.\
       \ The black streaks can sometimes form a unique grain pattern that is sometimes\
@@ -31002,7 +31006,7 @@
     notes: "Rock sheoak tends to have smaller, more frequent pores than other species\
       \ in the genus. It also has two distinct sizes of pores—both medium and small—\
       another feature that may help separate it from closely related species."
-- scientificName: "Allocasuarina torulosa (formerly"
+- scientificName: "Allocasuarina torulosa (formerly Casuarina torulosa)"
   basicData:
     pageUrl: "https://www.wood-database.com/rose-sheoak/"
     imageUrl: "./Wood Filter _ The Wood Database_files/allocasuarina-torulosa-250x167.jpg"
@@ -31066,7 +31070,7 @@
       \ hardwood family in the world. However, the aggregate rays found on rose sheoak\
       \ tend to appear slightly more compact than those found in other Allocasuarina\
       \ species."
-- scientificName: "Allocasuarina fraseriana (formerly"
+- scientificName: "Allocasuarina fraseriana (formerly Casuarina fraseriana)"
   basicData:
     pageUrl: "https://www.wood-database.com/western-sheoak/"
     imageUrl: "./Wood Filter _ The Wood Database_files/allocasuarina-fraseriana-250x167.jpg"
@@ -31177,7 +31181,7 @@
     ruptureModulus: "14,220 lb/in (98.1 MPa)"
     elasticModulus: "1,550,000 lb/in (10.69 GPa)*"
     crushingStrength: "6,700 lb/in (46.2 MPa)*"
-    shrinkage: "Radial: 3.6%, Tangential: 5.8%, Volumetric: 9.5%, T/R Ratio: 1.6* "
+    shrinkage: "Radial: 3.6%, Tangential: 5.8%, Volumetric: 9.5%, T/R Ratio: 1.6*"
   macroscopic:
     porosity: null
     arrangement: null
@@ -33212,7 +33216,7 @@
     ruptureModulus: "13,600 lb/in (93.8 MPa)*"
     elasticModulus: "1,800,000 lb/in (12.41 GPa)*"
     crushingStrength: "7,750 lb/in (53.4 MPa)*"
-    shrinkage: "Radial: 4.5%, Tangential: 5.1%, Volumetric: 12.9%, T/R Ratio: 1.1** "
+    shrinkage: "Radial: 4.5%, Tangential: 5.1%, Volumetric: 12.9%, T/R Ratio: 1.1**"
   macroscopic:
     porosity: null
     arrangement: null
