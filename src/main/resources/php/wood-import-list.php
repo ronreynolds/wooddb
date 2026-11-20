@@ -19,7 +19,7 @@ $result = $mysqli->query($sql);
             <tr>
                 <th>ID</th>
                 <th>Binomial(s)</th>
-                <th>Common Name (CSV)</th>
+                <th>Common Name (JSON)</th>
                 <th>SG</th>
                 <th>Janka</th>
                 <th>Porosity</th>
@@ -36,7 +36,7 @@ $result = $mysqli->query($sql);
             $binomial = htmlspecialchars($row['binomial']);
             $latinBinomial = htmlspecialchars($row['latinBinomial']);
             $commonName = htmlspecialchars($row['commonName'] ?? '');
-            $commonNamesCsv = htmlspecialchars($row['commonNamesTsv'] ?? '');
+            $commonNamesJson = htmlspecialchars($row['commonNamesJson'] ?? '');
 
             $specificGravity = htmlspecialchars($row['specificGravity'] ?? '');
             $jankaHardness = htmlspecialchars($row['jankaHardness'] ?? '');
@@ -49,7 +49,7 @@ $result = $mysqli->query($sql);
             <tr>
                 <td><a href="wood-import-detail.php?id=<?=$id?>" target="_blank"><?=$id?></a></td>
                 <td><span class="binomial"><?=$binomial?> (<?=$latinBinomial?>)</span></a></td>
-                <td><?=$commonName?>(<?=$commonNamesCsv?>)</td>
+                <td><?=$commonName?>(<code><?=$commonNamesJson?></code>)</td>
                 <td><?=$specificGravity?></td>
                 <td><?=$jankaHardness?></td>
                 <td><?=$porosity?></td>
