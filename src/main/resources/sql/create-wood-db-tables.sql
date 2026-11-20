@@ -10,11 +10,11 @@ create table wood_yaml_import (
     importDate              datetime not null default current_timestamp,
     sourceJson              text not null comment 'JSON from YAML data for the wood species',
     -- extracted fields
-    pageUrl                 varchar(500),
+    woodDatabaseUrl         varchar(500),
     imageUrl                varchar(500),
     commonName              varchar(100),
     binomial                varchar(100),
-    commonNamesTsv          varchar(1000),
+    commonNamesJson         varchar(1000) check (json_valid(commonNamesJson)),
     distribution            varchar(200),
     treeSize                varchar(200),
     colorAndAppearance      varchar(1000),
