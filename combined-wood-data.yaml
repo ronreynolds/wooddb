@@ -96,7 +96,7 @@
       \ irritation, and some Cordia species contain substances known as cordiachromes,\
       \ which can cause skin irritation. See the articles Wood Allergies and Toxicity\
       \ and Wood Dust Safety for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
     commonUses: "Veneer, furniture, cabinetry, and interior trim."
@@ -121,7 +121,7 @@
     vessels: "medium to large, few to very few; tyloses and light brown deposits common"
     parenchyma: "diffuse, vasicentric, banded (marginal)"
     rays: "medium to wide, wide spacing"
-    lookalikes: "No data available."
+    lookalikes: null
     notes: "None."
 - scientificName: "Pericopsis elata"
   basicData:
@@ -329,7 +329,7 @@
     elasticModulus: "1,939,000 lb/in (13.37 GPa)"
     crushingStrength: "9,960 lb/in (68.7 MPa)"
     shrinkage: "No data available; reported to have good stability. Values most likely\
-      \ similar to African species of ."
+      \ similar to African species of .  Afzelia"
   macroscopic:
     porosity: "diffuse porous"
     arrangement: "solitary and radial multiples"
@@ -364,7 +364,7 @@
     odor: "No characteristic odor."
     allergiesAndToxicity: "Ailanthus has been reported to cause skin irritation. See\
       \ the articles Wood Allergies and Toxicity and Wood Dust Safety for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species. In many locations it’s considered\
       \ to be an invasive or pest species."
@@ -494,7 +494,7 @@
       \ the Alnus genus have been reported to cause eye, skin, and respiratory irritation.\
       \ See the articles Wood Allergies and Toxicity and Wood Dust Safety for more\
       \ information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices, and\
       \ is reported by the IUCN as being a species of least concern."
     commonUses: "General construction, furniture, cabinetry, millwork, pallets, match\
@@ -676,7 +676,7 @@
       \ the Alnus genus has been reported to cause eye, skin, and respiratory irritation.\
       \ See the articles Wood Allergies and Toxicity and Wood Dust Safety for more\
       \ information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices, and\
       \ is reported by the IUCN as being a species of least concern."
     commonUses: "Firewood, interior utility wood, plywood, boxes, crates, and turned\
@@ -808,7 +808,7 @@
     allergiesAndToxicity: "Woods in the Prosopis genus have been reported to cause\
       \ skin irritation. See the articles Wood Allergies and Toxicity and Wood Dust\
       \ Safety for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices, but\
       \ is reported by the IUCN as being near threatened. Technically it doesn’t meet\
       \ the Red List criteria of a vulnerable or endangered species, but is close\
@@ -865,7 +865,7 @@
       \ the Alnus genus has been reported to cause eye, skin, and respiratory irritation.\
       \ See the articles Wood Allergies and Toxicity and Wood Dust Safety for more\
       \ information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices, and\
       \ is reported by the IUCN as being a species of least concern."
     commonUses: "General construction, furniture, cabinetry, millwork, pallets, shoe\
@@ -1048,7 +1048,7 @@
     specificGravity: ".57, .66"
     jankaHardness: "1,280 lb (5,700 N)*"
     ruptureModulus: "13,000 lb/in (89.6 MPa)"
-    elasticModulus: "No data available"
+    elasticModulus: null
     crushingStrength: "7,910 lb/in (54.5 MPa)"
     shrinkage: "Radial: 5.0%, Tangential: 7.8%, Volumetric: 13.0%, T/R Ratio: 1.6"
   macroscopic:
@@ -1287,11 +1287,11 @@
       \ of wood dust, no further health reactions have been associated with Anjan.\
       \ See the articles Wood Allergies and Toxicity and Wood Dust Safety for more\
       \ information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
-    commonUses: "No data available."
-    comments: "No data available."
+    commonUses: null
+    comments: null
   images:
     endGrainImage: "https://www.wood-database.com/wp-content/uploads/indian-anjan-endgrain-s.jpg"
     endGrain10xImage: "https://www.wood-database.com/wp-content/uploads/indian-anjan-endgrain-zoom-s.jpg"
@@ -1300,7 +1300,7 @@
     averageDryWeight: "46 lbs/ft (745 kg/m)"
     specificGravity: ".61, .74"
     jankaHardness: "1,460 lb (6,490 N)*"
-    ruptureModulus: "No data available"
+    ruptureModulus: null
     elasticModulus: "2,177,000 lb/in (15.01 GPa)"
     crushingStrength: "8,170 lb/in (56.4 MPa)"
     shrinkage: "Radial: 3.0%, Tangential: 4.0%, Volumetric: 8.0%, T/R Ratio: 1.3"
@@ -1477,7 +1477,7 @@
     jankaHardness: "1,930 lb"
     ruptureModulus: "15,950 lb/in"
     elasticModulus: "1,595,000 lb/in"
-    crushingStrength: "No data available"
+    crushingStrength: null
     shrinkage: "Radial: 6.1%, Tangential: 9.6%, Volumetric: 16.0%, T/R Ratio: 1.6"
   macroscopic:
     porosity: "diffuse porous"
@@ -1568,7 +1568,7 @@
       \ cast. Darker brown streaks are common. Sapwood is generally thin, and is slightly\
       \ paler than heartwood."
     grainAndTexture: "Fine even texture with moderate natural luster."
-    rotResistance: "No data available."
+    rotResistance: null
     workability: "Areas with straight and clear grain are easy to work with hand or\
       \ machine tools. Care must be taken when surfacing irregular grain or knots\
       \ to avoid tearout. Apricot glues, turns, and finishes well."
@@ -1596,10 +1596,10 @@
     averageDryWeight: "46 lbs/ft (745 kg/m)"
     specificGravity: ".58, .74"
     jankaHardness: "1,390 lb (6,200 N)*"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -2089,7 +2089,7 @@
       \ pale yellow. Heartwood colors can be streaked and varied, and tend to darken\
       \ with age."
     grainAndTexture: "Grain is straight, with a moderate to fine even texture."
-    rotResistance: "No data available."
+    rotResistance: null
     workability: "Easy to work with both hand and machine tools. Turns, glues, and\
       \ finishes well."
     odor: "Bark can have a strong mint-like scent, though the dried wood has little\
@@ -2122,7 +2122,7 @@
     ruptureModulus: "7,980 lb/in"
     elasticModulus: "1,320,000 lb/in"
     crushingStrength: "5,220 lb/in"
-    shrinkage: "No data available."
+    shrinkage: null
   macroscopic:
     porosity: "diffuse porous"
     arrangement: "radial multiples of two to five pores"
@@ -2355,8 +2355,8 @@
     jankaHardness: "1,010 lb (4,490 N)*"
     ruptureModulus: "10,810 lb/in (74.6 MPa)"
     elasticModulus: "1,195,000 lb/in (8.24 GPa)"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -2464,7 +2464,7 @@
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
     commonUses: "Boxes/crates, veneer, plywood, and various utility purposes."
-    comments: "No data available."
+    comments: null
   images:
     endGrainImage: "https://www.wood-database.com/wp-content/uploads/bigtooth-aspen-endgrain.jpg"
     endGrain10xImage: "https://www.wood-database.com/wp-content/uploads/bigtooth-aspen-endgrain-zoom.jpg"
@@ -3118,7 +3118,7 @@
     ruptureModulus: "8,010 lb/in"
     elasticModulus: "1,146,000 lb/in"
     crushingStrength: "4,470 lb/in"
-    shrinkage: ""
+    shrinkage: "Radial: 2.8%, Tangential: 5.7% Volumetric: 9.1%, T/R Ratio: 2.0"
   macroscopic:
     porosity: "diffuse porous; growth rings not discernible"
     arrangement: "solitary and radial multiples"
@@ -3297,7 +3297,7 @@
       \ medullary rays, whose layout can be seen the clearest when looking at the\
       \ endgrain."
     grainAndTexture: "Has a fairly coarse texture and straight grain."
-    rotResistance: "No data available."
+    rotResistance: null
     workability: "Fairly difficult to work because of its high density and tendency\
       \ to tearout during planing. Beefwood turns, glues, and finishes well."
     odor: "No characteristic odor."
@@ -3389,7 +3389,7 @@
     jankaHardness: "1,600 lb"
     ruptureModulus: "21,020 lb/in"
     elasticModulus: "2,287,000 lb/in"
-    crushingStrength: "No data available"
+    crushingStrength: null
     shrinkage: "Radial: 5.0%, Tangential: 8.4%, Volumetric: 13.6%, T/R Ratio: 1.7"
   macroscopic:
     porosity: "diffuse porous"
@@ -3711,7 +3711,7 @@
     jankaHardness: "930 lb (4,140 N)*"
     ruptureModulus: "17,760 lb/in (122.5 MPa)"
     elasticModulus: "1,745,000 lb/in (12.03 GPa)"
-    crushingStrength: "No data available"
+    crushingStrength: null
     shrinkage: "Radial: 6.0%, Tangential: 10.0%, Volumetric: 16.0%, T/R Ratio: 1.7"
   macroscopic:
     porosity: null
@@ -3922,9 +3922,9 @@
     averageDryWeight: "37 lbs/ft (590 kg/m)"
     specificGravity: ".49, .59"
     jankaHardness: "970 lb (4,320 N)*"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
     shrinkage: "Radial: 4.7%, Tangential: 9.2%, Volumetric: 13.5%, T/R Ratio: 2.0"
   macroscopic:
     porosity: null
@@ -3982,8 +3982,8 @@
     jankaHardness: "1,210 lb (5,360 N)"
     ruptureModulus: "16,570 lb/in (114.3 MPa)"
     elasticModulus: "2,024,000 lb/in (13.96 GPa)"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -4338,7 +4338,7 @@
     commonNames:
     - "Malaysian Blackwood"
     distribution: ""
-    treeSize: "No data available 72 lbs/ft (1,155 kg/m)"
+    treeSize: null
     colorAndAppearance: "Heartwood ranges from a medium brown to nearly black. Commonly\
       \ with black veining and contrasting brown or reddish streaks. Heartwood can\
       \ also have a greenish hue. Sharply demarcated sapwood is a pale yellow to tan\
@@ -4381,10 +4381,10 @@
     averageDryWeight: "72 lbs/ft (1,155 kg/m)"
     specificGravity: ".89, 1.15"
     jankaHardness: "3,180 lb (14,140 N)*"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -4466,10 +4466,10 @@
     distribution: "Coastal areas of eastern Australia"
     treeSize: "65-100 ft (20-30 m) tall, 3-4 ft (1-1.2 m) trunk diameter 54 lbs/ft\
       \ (865 kg/m)"
-    colorAndAppearance: "No data available."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    colorAndAppearance: null
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Although severe reactions are quite uncommon, Red Bloodwood\
       \ has been reported to cause eye and skin irritation. See the articles Wood\
@@ -4477,7 +4477,7 @@
     pricingAndAvailability: "Virtually never exported to North America."
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
-    commonUses: "No data available."
+    commonUses: null
     comments: "Not to be confused with the much more widespread commercial South American\
       \ lumber Bloodwood (Brosimum rubescens), Red Bloodwood is an unrelated Australian\
       \ species."
@@ -4620,9 +4620,9 @@
     averageDryWeight: "58 lbs/ft (930 kg/m)"
     specificGravity: ".74, .93"
     jankaHardness: "2,600 lb (11,570 N)"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
     shrinkage: "Radial: 4.0%, Tangential: 6.7%, Volumetric: 10.8%, T/R Ratio: 1.7"
   macroscopic:
     porosity: null
@@ -4886,19 +4886,19 @@
     distribution: "Australia"
     treeSize: "100-165 ft (30-50 m) tall, 3-5 ft (1-1.5 m) trunk diameter 70 lbs/ft\
       \ (1,120 kg/m)"
-    colorAndAppearance: "No data available."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    colorAndAppearance: null
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Although severe reactions are quite uncommon, Gray Box\
       \ has been reported to cause eye and skin irritation, as well as rashes. See\
       \ the articles Wood Allergies and Toxicity and Wood Dust Safety for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
-    commonUses: "No data available."
-    comments: "No data available."
+    commonUses: null
+    comments: null
   images:
     endGrainImage: null
     endGrain10xImage: null
@@ -4910,7 +4910,7 @@
     ruptureModulus: "22,010 lb/in (151.8 MPa)"
     elasticModulus: "2,612,000 lb/in (18.01 GPa)"
     crushingStrength: "11,340 lb/in (78.2 MPa)"
-    shrinkage: "No data available"
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -4933,9 +4933,9 @@
       \ (1,075 kg/m)"
     colorAndAppearance: "Heartwood ranges from light pink to golden brown. Pale gray\
       \ sapwood is sharply demarcated from heartwood. Commonly seen in burl form."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with Yellow\
@@ -4948,7 +4948,7 @@
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
     commonUses: "Turned objects, knife and gun grips, and small specialty objects."
-    comments: "No data available."
+    comments: null
   images:
     endGrainImage: null
     endGrain10xImage: null
@@ -5088,7 +5088,7 @@
     specificGravity: ".64, .82"
     jankaHardness: "1,810 lb (8,050 N)"
     ruptureModulus: "13,460 lb/in (92.8 MPa)"
-    elasticModulus: "No data available"
+    elasticModulus: null
     crushingStrength: "7,840 lb/in (54.1 MPa)"
     shrinkage: "Radial: 4.0%, Tangential: 7.4%, Volumetric: 11.0%, T/R Ratio: 1.9"
   macroscopic:
@@ -5258,9 +5258,9 @@
       \ of the burl, and are usually in a quarter-round shape which still includes\
       \ the bark on the outside edge. They tend to have a more consistent grain pattern,\
       \ and are more expensive than ebauchon burl blanks."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with Briar.\
@@ -5284,7 +5284,7 @@
     specificGravity: ".69, .91"
     jankaHardness: "2,090 lb (9,300 N)"
     ruptureModulus: "7,120 lb/in (49.1 MPa)"
-    elasticModulus: "No data available"
+    elasticModulus: null
     crushingStrength: "8,540 lb/in (58.9 MPa)"
     shrinkage: "Radial: 6.1%, Tangential: 8.5%, Volumetric: 15.6%, T/R Ratio: 1.4"
   macroscopic:
@@ -5529,10 +5529,10 @@
     averageDryWeight: "32.5 lbs/ft (520 kg/m)"
     specificGravity: ".44, .52"
     jankaHardness: "770 lb (3,430 N)*"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: "diffuse porous"
     arrangement: "solitary and radial multiples"
@@ -5627,7 +5627,7 @@
       \ overall color is close to the appearance of Canarywood."
     grainAndTexture: "Has a tight grain, with a fine uniform texture and moderate\
       \ natural luster."
-    rotResistance: "No data available."
+    rotResistance: null
     workability: "Easy to work, though significant end-checking can occur if not dried\
       \ properly. Buckthorn’s working characteristics are reminiscent of Cherry, and\
       \ it turns, glues, and finishes well."
@@ -5740,7 +5740,7 @@
       \ ray flecking on flatsawn surfaces."
     grainAndTexture: "Grain is straight to slightly interlocked. Uniform medium texture\
       \ with good natural luster."
-    rotResistance: "No data available."
+    rotResistance: null
     workability: "Can be difficult to work on account of its hardness. Tearout can\
       \ occur during planing or surfacing, especially on quartersawn surfaces in the\
       \ rays. Turns and finishes well."
@@ -5940,10 +5940,10 @@
     averageDryWeight: "72.9 lbs/ft"
     specificGravity: ".83, 1.17"
     jankaHardness: "3,050 lb"
-    ruptureModulus: "No data available"
+    ruptureModulus: null
     elasticModulus: "2,706,000 lb/in"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: "diffuse porous"
     arrangement: "solitary and radial multiples"
@@ -5974,7 +5974,7 @@
     colorAndAppearance: "Heartwood is dark reddish brown. Sapwood is yellow."
     grainAndTexture: "Uniform medium texture."
     rotResistance: "Rated as very durable; good insect resistance."
-    workability: "No data available."
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with Camelthorn.\
@@ -6000,10 +6000,10 @@
     averageDryWeight: "74 lbs/ft (1,185 kg/m)"
     specificGravity: ".95, 1.19"
     jankaHardness: "3,680 lb (16,370 N)"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -6976,18 +6976,18 @@
     - "Southern Redcedar"
     distribution: "Southeastern United States"
     treeSize: "50 ft (15 m) tall, 2 ft (.6 m) trunk diameter"
-    colorAndAppearance: "No data available."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    colorAndAppearance: null
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "Has a pleasant, cedar-like scent."
     allergiesAndToxicity: "Although severe reactions are quite uncommon, Southern\
       \ Redcedar has been reported to cause skin and respiratory irritation. See the\
       \ articles Wood Allergies and Toxicity and Wood Dust Safety for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
-    commonUses: "No data available."
+    commonUses: null
     comments: "Some botanists treat Southern Redcedar as a variety of Eastern Redcedar\
       \ (Juniperus virginiana var. silicicola), and the lumber is also likely to be\
       \ similar as well."
@@ -7148,7 +7148,7 @@
     ruptureModulus: "7,500 lb/in"
     elasticModulus: "1,110,000 lb/in"
     crushingStrength: "4,560 lb/in"
-    shrinkage: ""
+    shrinkage: "Radial: 2.4%, Tangential: 5.0% Volumetric: 6.8%, T/R Ratio: 2.1"
   macroscopic:
     porosity: null
     arrangement: null
@@ -7281,9 +7281,9 @@
     averageDryWeight: "58 lbs/ft (935 kg/m)"
     specificGravity: ".78, .93"
     jankaHardness: "2,250 lb (10,010 N)"
-    ruptureModulus: "No data available"
+    ruptureModulus: null
     elasticModulus: "2,574,000 lb/in (17.76 GPa)"
-    crushingStrength: "No data available"
+    crushingStrength: null
     shrinkage: "Radial: 2.8%, Tangential: 8.2%, Volumetric: 10.6%, T/R Ratio: 2.9"
   macroscopic:
     porosity: null
@@ -7595,7 +7595,7 @@
     ruptureModulus: "12,300 lb/in"
     elasticModulus: "1,490,000 lb/in"
     crushingStrength: "7,110 lb/in"
-    shrinkage: ""
+    shrinkage: "Radial: 3.7%, Tangential: 7.1% Volumetric: 11.5%, T/R Ratio: 1.9"
   macroscopic:
     porosity: "semi-ring-porous to diffuse-porous"
     arrangement: "earlywood can form a single continuous row of pores"
@@ -7790,7 +7790,7 @@
     ruptureModulus: "9,790 lb/in (67.5 MPa)"
     elasticModulus: "1,036,000 lb/in (7.15 GPa)"
     crushingStrength: "5,460 lb/in (37.7 MPa)"
-    shrinkage: "No data available, values most likely very similar to"
+    shrinkage: "No data available, values most likely very similar to  yellow buckeye"
   macroscopic:
     porosity: "diffuse porous"
     arrangement: "solitary and radial multiples"
@@ -7833,7 +7833,7 @@
     allergiesAndToxicity: "Although severe reactions are quite uncommon, Sweet Chestnut\
       \ has been reported as a sensitizer, causing skin irritation. See the articles\
       \ Wood Allergies and Toxicity and Wood Dust Safety for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
     commonUses: "Furniture, veneer, and carvings."
@@ -8137,7 +8137,7 @@
     ruptureModulus: "22,910 lb/in *"
     elasticModulus: "2,712,000 lb/in *"
     crushingStrength: "11,790 lb/in *"
-    shrinkage: ""
+    shrinkage: "Radial: 2.7%, Tangential: 4.3% Volumetric: 7.0%, T/R Ratio: 1.6"
   macroscopic:
     porosity: "diffuse porous; growth rings sometimes discernible due to marginal\
       \ parenchyma and a decrease in diffuse parenchyma"
@@ -8202,9 +8202,9 @@
     averageDryWeight: "72 lbs/ft"
     specificGravity: "0.92, 1.16"
     jankaHardness: "3,720 lb"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
     shrinkage: "No data available; reported to be very stable with minimal shrinkage"
   macroscopic:
     porosity: "diffuse porous"
@@ -9173,7 +9173,7 @@
     ruptureModulus: "8,250 lb/in (56.9 MPa)"
     elasticModulus: "653,000 lb/in (4.50 GPa)"
     crushingStrength: "3,680 lb/in (25.4 MPa)"
-    shrinkage: "No data available; most likely very similar to"
+    shrinkage: "No data available; most likely very similar to  Monterey Cypress"
   macroscopic:
     porosity: null
     arrangement: null
@@ -9289,8 +9289,8 @@
     jankaHardness: "560 lb (2,490 N)"
     ruptureModulus: "6,460 lb/in (44.6 MPa)"
     elasticModulus: "766,000 lb/in (5.28 GPa)"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -9496,11 +9496,11 @@
     commonNames:
     - "Dalmata"
     distribution: "South America"
-    treeSize: "No data available 64 lbs/ft (1,030 kg/m)"
+    treeSize: null
     colorAndAppearance: "Heartwood is medium reddish brown, with dark brown to black\
       \ streaks and veining."
     grainAndTexture: "Grain can be spiraled or interlocked. Medium to fine texture."
-    rotResistance: "No data available."
+    rotResistance: null
     workability: "Reported to be difficult to work, though it turns well."
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
@@ -9513,7 +9513,7 @@
       \ the IUCN Red List of Threatened Species."
     commonUses: "Turned objects, boxes, knife handles, and other small specialty wood\
       \ items."
-    comments: "No data available."
+    comments: null
   images:
     endGrainImage: "https://www.wood-database.com/wp-content/uploads/dalmata-endgrain.jpg"
     endGrain10xImage: "https://www.wood-database.com/wp-content/uploads/dalmata-endgrian-zoom.jpg"
@@ -9522,10 +9522,10 @@
     averageDryWeight: "64 lbs/ft (1,030 kg/m)"
     specificGravity: ".81, 1.03"
     jankaHardness: "2,620 lb (11,640 N)*"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -9818,10 +9818,10 @@
     averageDryWeight: "51 lbs/ft (825 kg/m)"
     specificGravity: ".67, .82"
     jankaHardness: "1,780 lb (7,920 N)"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -10138,7 +10138,7 @@
     ruptureModulus: "22,790 lb/in (157.2 MPa)"
     elasticModulus: "2,515,000 lb/in (17.35 GPa)"
     crushingStrength: "11,630 lbf/in2 (80.2 MPa)"
-    shrinkage: "No data available"
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -10164,7 +10164,7 @@
       \ is a pale yellow to white."
     grainAndTexture: "Grain is straight, with a very fine uniform texture and a high\
       \ natural luster."
-    rotResistance: "No data available."
+    rotResistance: null
     workability: "Difficult to work due to its high density. As with other ebonies,\
       \ Mun Ebony may present difficulties in gluing. Turns and finishes superbly."
     odor: "No characteristic odor."
@@ -10180,7 +10180,7 @@
       \ reduction of over 80% in the past three generations, caused by a decline in\
       \ its natural range, and exploitation."
     commonUses: "Inlay, carvings, veneer, and turned objects."
-    comments: "No data available."
+    comments: null
   images:
     endGrainImage: "https://www.wood-database.com/wp-content/uploads/mun-ebony-endgrain.jpg"
     endGrain10xImage: "https://www.wood-database.com/wp-content/uploads/mun-ebony-endgrain-zoom.jpg"
@@ -10189,10 +10189,10 @@
     averageDryWeight: "67 lbs/ft (1,065 kg/m)"
     specificGravity: ".82, 1.07"
     jankaHardness: "3,000 lb (13,350 N)"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -10525,7 +10525,7 @@
     elasticModulus: "1,091,000 lb/in (7.52 GPa)"
     crushingStrength: "4,640 lb/in (32.0 MPa)"
     shrinkage: "No data available (Most likely very similar to other species in the\
-      \ )"
+      \ )  Ulmus genus"
   macroscopic:
     porosity: null
     arrangement: null
@@ -12021,18 +12021,18 @@
     colorAndAppearance: "Heartwood is medium to dark reddish brown, sometimes with\
       \ darker streaks. Sharply demarcated sapwood is yellow. Curly figuring is also\
       \ seen on some pieces, and is called “ringed gidgee.”"
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with gidgee.\
       \ See the articles Wood Allergies and Toxicity and Wood Dust Safety for more\
       \ information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
-    commonUses: "No data available."
+    commonUses: null
     comments: "None."
   images:
     endGrainImage: "https://www.wood-database.com/wp-content/uploads/acacia-cambagei3.jpg"
@@ -12053,7 +12053,7 @@
       \ deposits common"
     parenchyma: "vasicentric, banded"
     rays: "narrow, normal spacing"
-    lookalikes: "No data available."
+    lookalikes: null
     notes: "Heartwood fluoresces under blacklight."
 - scientificName: "Acacia crombiei"
   basicData:
@@ -12163,9 +12163,9 @@
     averageDryWeight: "28.9 lbs/ft"
     specificGravity: ".43, .46"
     jankaHardness: "750 lb"
-    ruptureModulus: "No data available"
+    ruptureModulus: null
     elasticModulus: "1,311,000 lb/in"
-    crushingStrength: "No data available"
+    crushingStrength: null
     shrinkage: "No data available; reported to have low shrinkage rates and good stability\
       \ in service"
   macroscopic:
@@ -12374,7 +12374,7 @@
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
     commonUses: "Veneer, furniture, cabinetry, and flooring."
-    comments: "No data available."
+    comments: null
   images:
     endGrainImage: null
     endGrain10xImage: null
@@ -12531,19 +12531,19 @@
     distribution: "Eastern Australia"
     treeSize: "65-130 ft (20-40 m) tall, 3-5 ft (1-1.5 m) trunk diameter 59 lbs/ft\
       \ (950 kg/m)"
-    colorAndAppearance: "No data available."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    colorAndAppearance: null
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "Although the tree is called Lemon-Scented Gum (and for good reason), the\
       \ wood itself has virtually no odor."
     allergiesAndToxicity: "Although severe reactions are quite uncommon, Lemon-Scented\
       \ Gum has been reported to cause skin irritation. See the articles Wood Allergies\
       \ and Toxicity and Wood Dust Safety for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
-    commonUses: "No data available."
+    commonUses: null
     comments: "So named for obvious reasons—the foliage of the tree can have a strong\
       \ lemon smell. This species was formerly in the Eucalyptus genus, and was moved\
       \ to the Corymbia genus in 1995."
@@ -12579,20 +12579,20 @@
     distribution: "Australia"
     treeSize: "100-150 ft (30-46 m) tall, 3-5 ft (1-1.5 m) trunk diameter 54 lbs/ft\
       \ (870 kg/m)"
-    colorAndAppearance: "No data available."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    colorAndAppearance: null
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with River\
       \ Red Gum. See the articles Wood Allergies and Toxicity and Wood Dust Safety\
       \ for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
-    commonUses: "No data available."
-    comments: "No data available."
+    commonUses: null
+    comments: null
   images:
     endGrainImage: "https://www.wood-database.com/wp-content/uploads/river-red-gum-endgrain.jpg"
     endGrain10xImage: "https://www.wood-database.com/wp-content/uploads/river-red-gum-ez.jpg"
@@ -12682,18 +12682,18 @@
     distribution: "Australia (coastal regions of New South Wales)"
     treeSize: "100-165 ft (30-50 m) tall, 3-5 ft (1-1.5 m) trunk diameter 59 lbs/ft\
       \ (940 kg/m)"
-    colorAndAppearance: "No data available."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    colorAndAppearance: null
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Although severe reactions are quite uncommon, Spotted Gum\
       \ has been reported to cause skin irritation and rashes. See the articles Wood\
       \ Allergies and Toxicity and Wood Dust Safety for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
-    commonUses: "No data available."
+    commonUses: null
     comments: "So named because the smooth grayish-white bark of the tree is shed\
       \ in flakes, leaving conspicuous spots. This species was formerly in the Eucalyptus\
       \ genus, and was moved to the Corymbia genus in 1995."
@@ -12730,19 +12730,19 @@
     distribution: "Southern Australia (also widely planted as an ornamental tree)"
     treeSize: "50-65 ft (15-20 m) tall, 2-3 ft (.6-1 m) trunk diameter 63 lbs/ft (1,010\
       \ kg/m)"
-    colorAndAppearance: "No data available."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    colorAndAppearance: null
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Although severe reactions are quite uncommon, Yellow Gum\
       \ has been reported to cause skin and respiratory irritation. See the articles\
       \ Wood Allergies and Toxicity and Wood Dust Safety for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
-    commonUses: "No data available."
-    comments: "No data available."
+    commonUses: null
+    comments: null
   images:
     endGrainImage: null
     endGrain10xImage: null
@@ -12868,9 +12868,9 @@
     averageDryWeight: "48.9 lbs/ft"
     specificGravity: ".66, .78"
     jankaHardness: "1,860 lb"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
     shrinkage: "Radial: ~5%, Tangential: ~9%, Volumetric: ~14%, T/R Ratio: ~1.8"
   macroscopic:
     porosity: "diffuse porous; however, growth rings are usually visible due to an\
@@ -13305,7 +13305,8 @@
     ruptureModulus: "16,600 lb/in (114.5 MPa)"
     elasticModulus: "1,700,000 lb/in (11.72 GPa)"
     crushingStrength: "6,910 lb/in (47.7 MPa)"
-    shrinkage: "No data available. (Most likely very similar to the values for .)"
+    shrinkage: "No data available. (Most likely very similar to the values for .)\
+      \  Pecan"
   macroscopic:
     porosity: null
     arrangement: null
@@ -13715,9 +13716,9 @@
     averageDryWeight: "41 lbs/ft (650 kg/m)"
     specificGravity: ".50, .65"
     jankaHardness: "1,010 lb (4,510 N)"
-    ruptureModulus: "No data available*"
-    elasticModulus: "No data available*"
-    crushingStrength: "No data available*"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
     shrinkage: "Radial: 5.4%, Tangential: 10.0%, Volumetric: 16.4%, T/R Ratio: 1.9"
   macroscopic:
     porosity: null
@@ -14391,7 +14392,7 @@
       \ entirely black. Narrow yellow sapwood is clearly demarcated from heartwood."
     grainAndTexture: "Due to the small size of the tree, grain can be wild or gnarled.\
       \ Fine even texture and excellent natural luster."
-    rotResistance: "No data available."
+    rotResistance: null
     workability: "Very difficult to work on account of its density. High cutting resistance.\
       \ Desert Ironwood is usually restricted to very small projects, though it takes\
       \ a good natural polish and is very stable in service. Turns, polishes, and\
@@ -14426,8 +14427,8 @@
     specificGravity: "~.97, ~1.21"
     jankaHardness: "3,260 lb (14,500 N)"
     ruptureModulus: "10,880 lb/in (75.0 MPa)"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
+    elasticModulus: null
+    crushingStrength: null
     shrinkage: "No data available; reported to be very stable in service"
   macroscopic:
     porosity: null
@@ -14811,13 +14812,13 @@
     commonNames:
     - "Jicarillo"
     distribution: "Honduras"
-    treeSize: "No data available 63 lbs/ft (1,000 kg/m)"
+    treeSize: null
     colorAndAppearance: "Heartwood tends to be a light to medium reddish brown, with\
       \ darker black streaks mixed throughout. Sharply demarcated sapwood is a grayish\
       \ white."
     grainAndTexture: "Uniform medium to fine texture with good natural luster."
     rotResistance: "Reported to have good rot resistance."
-    workability: "No data available."
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with Jicarillo.\
@@ -14845,10 +14846,10 @@
     averageDryWeight: "63 lbs/ft (1,000 kg/m)"
     specificGravity: ".77, 1.00"
     jankaHardness: "2,360 lb (10,490 N)*"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -14948,22 +14949,22 @@
     distribution: "East Africa"
     treeSize: "100-120 ft (30-37 m) tall, 4-5 ft (1.2-1.5 m) trunk diameter 34 lbs/ft\
       \ (535 kg/m)"
-    colorAndAppearance: "No data available."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    colorAndAppearance: null
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "Has a pleasant, cedar-like scent."
     allergiesAndToxicity: "Although there have been no adverse health effects specifically\
       \ reported for African Juniper, several other species within the Juniperus genus\
       \ have been reported to cause skin and/or respiratory irritation. See the articles\
       \ Wood Allergies and Toxicity and Wood Dust Safety for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices, but\
       \ is reported by the IUCN as being near threatened. Technically it doesn’t meet\
       \ the Red List criteria of a vulnerable or endangered species, but is close\
       \ to qualifying and/or may qualify in the near future."
-    commonUses: "No data available."
-    comments: "No data available."
+    commonUses: null
+    comments: null
   images:
     endGrainImage: null
     endGrain10xImage: null
@@ -14996,18 +14997,18 @@
     distribution: "Southwestern United States and northern Mexico"
     treeSize: "30-50 ft (9-15 m) tall, 2-3 ft (.6-1 m) trunk diameter 36 lbs/ft (585\
       \ kg/m)"
-    colorAndAppearance: "No data available."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
-    odor: "No data available."
+    colorAndAppearance: null
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
+    odor: null
     allergiesAndToxicity: "Although severe reactions are quite uncommon, Alligator\
       \ Juniper has been reported to cause skin and respiratory irritation. See the\
       \ articles Wood Allergies and Toxicity and Wood Dust Safety for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices, and\
       \ is reported by the IUCN as being a species of least concern."
-    commonUses: "No data available."
+    commonUses: null
     comments: "So named for the bark’s resemblance to the rough and textured skin\
       \ of an alligator. A small coniferous tree that’s technically related to the\
       \ widely popular Eastern Red Cedar (Juniperus virginiana)."
@@ -15211,7 +15212,7 @@
     ruptureModulus: "28,010 lb/in"
     elasticModulus: "3,715,000 lb/in"
     crushingStrength: "15,240 lb/in"
-    shrinkage: ""
+    shrinkage: "Radial: 3.9%, Tangential: 7.6% Volumetric: 11.2%, T/R Ratio: 1.9"
   macroscopic:
     porosity: "diffuse porous; growth rings not distinct"
     arrangement: "solitary and radial multiples"
@@ -15777,9 +15778,9 @@
     specificGravity: "0.89, 1.04"
     jankaHardness: "2,660 lb"
     ruptureModulus: "18,980 lb/in"
-    elasticModulus: "No data available"
+    elasticModulus: null
     crushingStrength: "10,150 lb/in"
-    shrinkage: ""
+    shrinkage: "Radial: 6.9%, Tangential: 9.3% Volumetric: 16.5%, T/R Ratio: 1.4"
   macroscopic:
     porosity: "diffuse porous (occasionally appearing semi-ring-porous due to a subtle\
       \ variation in pore size from earlywood to latewood)"
@@ -16113,7 +16114,7 @@
       \ of over 20% in the past three generations, caused by a decline in its natural\
       \ range, and exploitation."
     commonUses: "Veneer, plywood, and furniture."
-    comments: "No data available."
+    comments: null
   images:
     endGrainImage: "https://www.wood-database.com/wp-content/uploads/koto-endgrain-s.jpg"
     endGrain10xImage: "https://www.wood-database.com/wp-content/uploads/koto-endgrain-zoom-s.jpg"
@@ -16185,10 +16186,10 @@
     averageDryWeight: "53 lbs/ft (850 kg/m)"
     specificGravity: ".69, .85"
     jankaHardness: "2,020 lb (8,990 N)*"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -16250,10 +16251,10 @@
     averageDryWeight: "36.2 lbs/ft (580 kg/m)"
     specificGravity: ".48, .58"
     jankaHardness: "840 lb (3,740 N)"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -16315,7 +16316,7 @@
     jankaHardness: "2,830 lb (12,590 N)"
     ruptureModulus: "23,700 lb/in (163.5 MPa)"
     elasticModulus: "2,900,000 lb/in (20.00 GPa)"
-    crushingStrength: "No data available"
+    crushingStrength: null
     shrinkage: "Radial: 6.2%, Tangential: 9.6%, Volumetric: 15.4%, T/R Ratio: 1.5"
   macroscopic:
     porosity: null
@@ -16693,7 +16694,7 @@
     ruptureModulus: "11,610 lb/in (80.1 MPa)"
     elasticModulus: "1,270,000 lb/in (8.76 GPa)"
     crushingStrength: "6,010 lb/in (41.4 MPa)"
-    shrinkage: "No data available"
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -16968,7 +16969,7 @@
       \ the IUCN Red List of Threatened Species."
     commonUses: "Veneer, furniture, cabinetry, boatbuilding, turned objects, and other\
       \ small specialty items."
-    comments: "No data available."
+    comments: null
   images:
     endGrainImage: null
     endGrain10xImage: null
@@ -17212,7 +17213,7 @@
     averageDryWeight: "55 lbs/ft (885 kg/m)"
     specificGravity: ".73, .89"
     jankaHardness: "2,150 lb (9,560 N)"
-    ruptureModulus: "No data available"
+    ruptureModulus: null
     elasticModulus: "2,887,000 lb/in (19.91 GPa)"
     crushingStrength: "7,280 lb/in (50.2 MPa)"
     shrinkage: "Radial: 3.5%, Tangential: 8.8%, Volumetric: 11.5%, T/R Ratio: 2.5"
@@ -17335,7 +17336,7 @@
     ruptureModulus: "17,970 lb/in"
     elasticModulus: "2,481,000 lb/in"
     crushingStrength: "12,380 lb/in"
-    shrinkage: ""
+    shrinkage: "Radial: 5.3%, Tangential: 8.7% Volumetric: 14.0%, T/R Ratio: 1.6"
   macroscopic:
     porosity: "diffuse porous"
     arrangement: "exclusively solitary"
@@ -17485,9 +17486,9 @@
     averageDryWeight: "59 lbs/ft (945 kg/m)"
     specificGravity: ".74, .95"
     jankaHardness: "2,350 lb (10,440 N)*"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
     shrinkage: "Tangential shrinkage is in excess of 10%; reported to have a high\
       \ level of shrinkage"
   macroscopic:
@@ -17981,7 +17982,7 @@
       \ brown. Very large rays exhibit a lacewood-like effect when quartersawn. Color\
       \ tends to darken with age."
     grainAndTexture: "Has a fairly coarse texture."
-    rotResistance: "No data available."
+    rotResistance: null
     workability: "Can be difficult to work with machine tools, causing tearout during\
       \ planing. Difficult to dry, with turned pieces developing numerous checks unless\
       \ dry wood is used. Glues, turns, and finishes well."
@@ -18011,10 +18012,10 @@
     averageDryWeight: "44 lbs/ft (705 kg/m)"
     specificGravity: ".57, .70"
     jankaHardness: "2,300 lb (10,230 N)"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -18246,9 +18247,9 @@
     averageDryWeight: "47 lbs/ft (755 kg/m)"
     specificGravity: ".62, .75"
     jankaHardness: "1,420 lb (6,320 N)"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
     shrinkage: "Radial: 2.1%, Tangential: 4.9%, Volumetric: 7.1%, T/R Ratio: 2.3"
   macroscopic:
     porosity: null
@@ -18532,7 +18533,7 @@
     ruptureModulus: "11,710 lb/in"
     elasticModulus: "1,458,000 lb/in"
     crushingStrength: "6,760 lb/in"
-    shrinkage: ""
+    shrinkage: "Radial: 2.9%, Tangential: 4.3% Volumetric: 7.5%, T/R Ratio: 1.5"
   macroscopic:
     porosity: "diffuse porous; growth rings usually distinct due to marginal parenchyma\
       \ bands"
@@ -18621,10 +18622,10 @@
     averageDryWeight: "40.3 lbs/ft"
     specificGravity: ".55, .65"
     jankaHardness: "1,180 lb"
-    ruptureModulus: "No data available.†"
-    elasticModulus: "No data available.†"
-    crushingStrength: "No data available.†"
-    shrinkage: ""
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: "diffuse porous; growth rings usually distinct due to marginal parenchyma\
       \ bands"
@@ -18706,10 +18707,10 @@
     averageDryWeight: "43.1 lbs/ft"
     specificGravity: ".56, .69"
     jankaHardness: "1,200 lb"
-    ruptureModulus: "No data available.†"
-    elasticModulus: "No data available.†"
-    crushingStrength: "No data available.†"
-    shrinkage: ""
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: "diffuse porous; growth rings usually distinct due to marginal parenchyma\
       \ bands"
@@ -18742,7 +18743,7 @@
       \ not always sharply demarcated form heartwood. Color of both sapwood and heartwood\
       \ tends to darken with age."
     grainAndTexture: "Very fine, even texture; excellent natural luster."
-    rotResistance: "No data available."
+    rotResistance: null
     workability: "Tends to be difficult to work on account of it’s density and cutting\
       \ resistance. Turns well."
     odor: "No characteristic odor."
@@ -18769,9 +18770,9 @@
     averageDryWeight: "69 lbs/ft (1,110 kg/m)"
     specificGravity: ".93, 1.11"
     jankaHardness: "3,200 lb (14,230 N)"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
     shrinkage: "Radial: 2.3%, Tangential: 4.4%, Volumetric: 6.8%, T/R Ratio: 1.9"
   macroscopic:
     porosity: null
@@ -18895,21 +18896,21 @@
     distribution: "Eastern Australia"
     treeSize: "65-100 ft (20-30 m) tall, 2-3 ft (.6-1.0 m) trunk diameter 49 lbs/ft\
       \ (785 kg/m)"
-    colorAndAppearance: "No data available."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    colorAndAppearance: null
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with Swamp\
       \ Mahogany, though several other species within the Eucalyptus genus have been\
       \ reported to cause various allergic reactions. See the articles Wood Allergies\
       \ and Toxicity and Wood Dust Safety for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
-    commonUses: "No data available."
-    comments: "No data available."
+    commonUses: null
+    comments: null
   images:
     endGrainImage: "https://www.wood-database.com/wp-content/uploads/swamp-mahogany-endgrain.jpg"
     endGrain10xImage: "https://www.wood-database.com/wp-content/uploads/swamp-mahogany-endgrain-zoom.jpg"
@@ -18985,7 +18986,7 @@
     ruptureModulus: "16,330 lb/in"
     elasticModulus: "1,552,000 lb/in"
     crushingStrength: "8,290 lb/in"
-    shrinkage: ""
+    shrinkage: "Radial: 5.5%, Tangential: 7.7% Volumetric: 12.4%, T/R Ratio: 1.4"
   macroscopic:
     porosity: "diffuse porous; growth rings generally not distinct"
     arrangement: "predominantly in pore chains and radial multiples of two to five"
@@ -19013,9 +19014,9 @@
     colorAndAppearance: "Heartwood generally medium brown, sometimes with an orange\
       \ cast. Pale yellow to gray sapwood is sharply demarcated from heartwood. Nearly\
       \ always seen in burl form."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with Brown\
@@ -19041,10 +19042,10 @@
     averageDryWeight: "66 lbs/ft (1,050 kg/m)"
     specificGravity: ".79, 1.05"
     jankaHardness: "2,490 lb (11,060 N)*"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -19068,9 +19069,9 @@
     colorAndAppearance: "Heartwood ranges from pink to orangish red. Pale yellow to\
       \ gray sapwood is sharply demarcated from heartwood. Nearly always seen in burl\
       \ form."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with Red Mallee,\
@@ -19096,10 +19097,10 @@
     averageDryWeight: "66 lbs/ft (1,050 kg/m)"
     specificGravity: ".79, 1.05"
     jankaHardness: "2,490 lb (11,060 N)*"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -19121,19 +19122,19 @@
     - "hickory wattle"
     distribution: "Australia and Papua New Guinea"
     treeSize: "65- 100 ft (20-30 m) tall, 1-2 ft (.3-.6 m) trunk diameter"
-    colorAndAppearance: "No data available."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    colorAndAppearance: null
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with Mangium.\
       \ See the articles Wood Allergies and Toxicity and Wood Dust Safety for more\
       \ information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
-    commonUses: "No data available."
+    commonUses: null
     comments: "Mangium is commonly grown as a plantation species, and density of the\
       \ wood can vary greatly depending on tree age and growing conditions. It is\
       \ also hybridized with earpod wattle (A. auriculiformis) to form another plantation\
@@ -19156,7 +19157,7 @@
     vessels: "large, few"
     parenchyma: "vasicentric"
     rays: "narrow, normal spacing"
-    lookalikes: "No data available."
+    lookalikes: null
     notes: "Heartwood will sometimes fluoresce under blacklight (not always present)."
 - scientificName: "Mangifera indica"
   basicData:
@@ -19342,10 +19343,10 @@
     averageDryWeight: "57.6 lbs/ft (920 kg/m)"
     specificGravity: ".74, .92"
     jankaHardness: "2,350 lb (10,440 N)*"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -19694,8 +19695,8 @@
     jankaHardness: "1,150 lb (5,110 N)*"
     ruptureModulus: "17,830 lb/in (123.0 MPa)"
     elasticModulus: "1,711,000 lb/in (11.80 GPa)"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: "diffuse porous"
     arrangement: "solitary and radial multiples"
@@ -19925,7 +19926,7 @@
     ruptureModulus: "16,680 lb/in(115.0 MPa)"
     elasticModulus: "1,538,000 lb/in(10.60 GPa)"
     crushingStrength: "8,560 lb/in(59.0 MPa)"
-    shrinkage: "No data available"
+    shrinkage: null
   macroscopic:
     porosity: "diffuse porous"
     arrangement: "solitary and radial multiples"
@@ -20397,9 +20398,9 @@
     averageDryWeight: "32.0 lbs/ft (515 kg/m)"
     specificGravity: ".44, .51"
     jankaHardness: "770 lb (3,430 N)*"
-    ruptureModulus: "No data available*"
-    elasticModulus: "No data available*"
-    crushingStrength: "No data available*"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
     shrinkage: "Radial: 3.2%, Tangential: 8.6%, Volumetric: 12.3%, T/R Ratio: 2.7"
   macroscopic:
     porosity: "diffuse porous"
@@ -21005,9 +21006,9 @@
     averageDryWeight: "51 lbs/ft (820 kg/m)"
     specificGravity: ".70, .82"
     jankaHardness: "2,340 lb (10,410 N)"
-    ruptureModulus: "No data available*"
-    elasticModulus: "No data available*"
-    crushingStrength: "No data available*"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
     shrinkage: "Radial: 1.6%, Tangential: 3.2%, Volumetric: 4.8%, T/R Ratio: 2.0"
   macroscopic:
     porosity: null
@@ -21030,20 +21031,20 @@
     distribution: "Southeastern Australia"
     treeSize: "150-250 ft (46-76 m) tall, 4-8 ft (1.2-2.4 m) trunk diameter 47 lbs/ft\
       \ (750 kg/m)"
-    colorAndAppearance: "No data available."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    colorAndAppearance: null
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Although severe reactions are quite uncommon, Messmate\
       \ has been reported to cause skin and respiratory irritation, as well as asthma-like\
       \ symptoms. See the articles Wood Allergies and Toxicity and Wood Dust Safety\
       \ for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
-    commonUses: "No data available."
-    comments: "No data available."
+    commonUses: null
+    comments: null
   images:
     endGrainImage: "https://www.wood-database.com/wp-content/uploads/messmate-endgrain.jpg"
     endGrain10xImage: "https://www.wood-database.com/wp-content/uploads/messmate-endgrain-zoom.jpg"
@@ -21143,7 +21144,7 @@
       \ darkens with age."
     grainAndTexture: "Has a coarse, somewhat uneven texture with good natural luster."
     rotResistance: "Reported as non-durable to perishable."
-    workability: "No data available."
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Although severe reactions are quite uncommon, mimosa has\
       \ been reported to cause respiratory irritation. See the articles Wood Allergies\
@@ -21166,10 +21167,10 @@
     averageDryWeight: "33.5 lbs/ft"
     specificGravity: "0.44, 0.54"
     jankaHardness: "770 lb"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: "semi-ring-porous"
     arrangement: "solitary and radial multiples"
@@ -21386,19 +21387,19 @@
     distribution: "Southern Africa"
     treeSize: "65-100 ft (20-30 m) tall, 3 ft (1 m) trunk diameter 50 lbs/ft (800\
       \ kg/m)"
-    colorAndAppearance: "No data available."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    colorAndAppearance: null
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with Monkeythorn.\
       \ See the articles Wood Allergies and Toxicity and Wood Dust Safety for more\
       \ information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
-    commonUses: "No data available."
+    commonUses: null
     comments: "This thorny tree is supposedly named for the tendency of monkeys to\
       \ seek refuge in the tree (whose seeds and pods also provide the animals with\
       \ food). It’s among the largest Acacia species naturally found in South Africa."
@@ -21413,7 +21414,7 @@
     ruptureModulus: "16,240 lb/in (112.0 MPa)"
     elasticModulus: "1,905,000 lb/in (13.14 GPa)"
     crushingStrength: "8,850 lb/in (61.0 MPa)"
-    shrinkage: "No data available"
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -22080,7 +22081,7 @@
     allergiesAndToxicity: "Woods in the Prosopis genus have been reported to cause\
       \ skin irritation. See the articles Wood Allergies and Toxicity and Wood Dust\
       \ Safety for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices, but\
       \ is reported by the IUCN as being data deficient."
     commonUses: "Flooring, firewood, turned objects, cabinetry, and furniture."
@@ -22095,8 +22096,8 @@
     jankaHardness: "2,750 lb (12,230 N)*"
     ruptureModulus: "6,430 lb/in (44.3 MPa)"
     elasticModulus: "1,420,000 lb/in (9.79 GPa)"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -22138,7 +22139,7 @@
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
     commonUses: "Turned objects, furniture, cabinetry, boatbuilding, and general construction."
-    comments: "No data available."
+    comments: null
   images:
     endGrainImage: null
     endGrain10xImage: null
@@ -22810,7 +22811,7 @@
     ruptureModulus: "21,220 lb/in"
     elasticModulus: "1,945,000 lb/in"
     crushingStrength: "8,840 lb/in"
-    shrinkage: ""
+    shrinkage: "Radial: 4.5%, Tangential: 6.7% Volumetric: 18.6%, T/R Ratio: 1.5"
   macroscopic:
     porosity: "diffuse porous (or semi-ring porous with pore size gradually decreasing\
       \ in the latewood); growth rings possibly indicated by lighter-color or flattened\
@@ -22863,7 +22864,7 @@
       \ Although severe reactions are quite uncommon, oak has been reported as a sensitizer.\
       \ Usually most common reactions simply include eye and skin irritation. See\
       \ the articles Wood Allergies and Toxicity and Wood Dust Safety for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is in CITES Appendix III, but is not on the\
       \ IUCN Red List."
     commonUses: "Boatbuilding, tight cooperage (whiskey barrels), veneer, and furniture."
@@ -22880,10 +22881,10 @@
     averageDryWeight: "43 lbs/ft (680 kg/m)"
     specificGravity: ".64, .68"
     jankaHardness: "1,200 lb (5,320 N)*"
-    ruptureModulus: "No data available"
+    ruptureModulus: null
     elasticModulus: "1,525,000 lb/in (10.51 GPa)"
     crushingStrength: "8,290 lb/in (57.2 MPa)"
-    shrinkage: "No data available"
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -23329,7 +23330,7 @@
     ruptureModulus: "14,380 lb/in"
     elasticModulus: "1,761,000 lb/in"
     crushingStrength: "6,780 lb/in"
-    shrinkage: ""
+    shrinkage: "Radial: 4%, Tangential: 8.6% Volumetric: 13.7%, T/R Ratio: 2.2"
   macroscopic:
     porosity: "ring porous"
     arrangement: "exclusively solitary earlywood pores in rows of two to four, latewood\
@@ -23514,8 +23515,8 @@
     jankaHardness: "1,290 lb (5,750 N)*"
     ruptureModulus: "17,830 lb/in (123.0 MPa)"
     elasticModulus: "2,154,000 lb/in (14.86 GPa)"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -23705,15 +23706,15 @@
     rotResistance: "Falls somewhere between durable and moderately durable."
     workability: "Turkey Oak is said to work similarly to oaks found in the United\
       \ States."
-    odor: "No data available."
+    odor: null
     allergiesAndToxicity: "Although severe reactions are quite uncommon, oak has been\
       \ reported as a sensitizer. Usually most common reactions simply include eye\
       \ and skin irritation, as well as asthma-like symptoms. See the articles Wood\
       \ Allergies and Toxicity and Wood Dust Safety for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
-    commonUses: "No data available."
+    commonUses: null
     comments: "Turkey Oak does not belong to either the White or Red Oak groups, but\
       \ is divided into a separate group which also includes Cork Oak (Quercus suber),\
       \ the primary oak species used for cork bottle stoppers."
@@ -23848,7 +23849,7 @@
     ruptureModulus: "14,830 lb/in"
     elasticModulus: "1,762,000 lb/in"
     crushingStrength: "7,370 lb/in"
-    shrinkage: ""
+    shrinkage: "Radial: 5.6%, Tangential: 10.5% Volumetric: 16.3%, T/R Ratio: 1.9"
   macroscopic:
     porosity: "ring porous"
     arrangement: "exclusively solitary earlywood pores in two to four rows, latewood\
@@ -24417,8 +24418,8 @@
       \ brown, sometimes with a greenish hue. Sapwood a much lighter yellow-white."
     grainAndTexture: "Unlike true Olive (Olea genus), Russian Olive is very porous\
       \ and of an uneven grain texture."
-    rotResistance: "No data available."
-    workability: "No data available."
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with Russian\
@@ -24443,10 +24444,10 @@
     averageDryWeight: "43 lbs/ft (685 kg/m)"
     specificGravity: ".55, .69"
     jankaHardness: "1,240 lb (5,530 N)*"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -24933,7 +24934,7 @@
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
     commonUses: "Veneer, furniture, cabinetry, and flooring."
-    comments: "No data available."
+    comments: null
   images:
     endGrainImage: null
     endGrain10xImage: null
@@ -25683,23 +25684,23 @@
     distribution: "Southeast Asia and Oceania"
     treeSize: "100-130 ft (30-40 m) tall, 1-2 ft (.3-.6 m) trunk diameter 48 lbs/ft\
       \ (770 kg/m)"
-    colorAndAppearance: "No data available."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    colorAndAppearance: null
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with Pericopsis;\
       \ however, another wood species in the Pericopsis genus (Afrormosia) has been\
       \ reported to cause a number of allergic reactions. See the articles Wood Allergies\
       \ and Toxicity and Wood Dust Safety for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices, but\
       \ is on the IUCN Red List. It is listed as vulnerable due to a population reduction\
       \ of over 20% in the past three generations, caused by a decline in its natural\
       \ range, and exploitation."
-    commonUses: "No data available."
-    comments: "No data available."
+    commonUses: null
+    comments: null
   images:
     endGrainImage: null
     endGrain10xImage: null
@@ -26883,7 +26884,7 @@
     rotResistance: "Since Pinyon Pine isn’t generally harvested as lumber, no known\
       \ durability tests are available; however, a study done on standing dead trees\
       \ indicates mediocre durability for the species."
-    workability: "No data available."
+    workability: null
     odor: "Pinyon Pine has a resinous odor when being worked. Pinyon Pine is also\
       \ known for its distinctive fragrance when burned as firewood."
     allergiesAndToxicity: "Working with pine has been reported to cause allergic skin\
@@ -27450,7 +27451,7 @@
     ruptureModulus: "10,300 lb/in (71.0 MPa)"
     elasticModulus: "1,405,000 lb/in (9.69 GPa)"
     crushingStrength: "5,660 lb/in (39.0 MPa)"
-    shrinkage: "No data available"
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -27818,8 +27819,8 @@
       \ grafted onto the rootstock."
     grainAndTexture: "Because of the small size of the tree, the grain tends to be\
       \ wild or irregular, with bark inclusions also common."
-    rotResistance: "No data available."
-    workability: "No data available."
+    rotResistance: null
+    workability: null
     odor: "Has a mild odor when being worked."
     allergiesAndToxicity: "Although parts of the Pistachio tree and nut have been\
       \ reported to cause skin irritation, there have been no direct reports on the\
@@ -27844,10 +27845,10 @@
     averageDryWeight: "54 lbs/ft (865 kg/m)*"
     specificGravity: ".68, .87*"
     jankaHardness: "1,930 lb (8,590 N)"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -27935,7 +27936,7 @@
       \ mixed in. Because of the small size of plum trees, swirled or irregular grain,\
       \ as well as knots and other defects are common."
     grainAndTexture: "Has a fine texture with close grain and a slight natural luster."
-    rotResistance: "No data available."
+    rotResistance: null
     workability: "Areas with straight and clear grain are easy to work with hand or\
       \ machine tools. Care must be taken when surfacing irregular grain or knots\
       \ to avoid tearout. Plum glues, turns, and finishes well."
@@ -27966,8 +27967,8 @@
     jankaHardness: "1,550 lb (6,900 N)*"
     ruptureModulus: "12,810 lb/in (88.4 MPa)"
     elasticModulus: "1,478,000 lb/in (10.19 GPa)"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -27988,19 +27989,19 @@
     distribution: "Canada and northern United States"
     treeSize: "80-100 ft (25-30 m) tall, 3-5 ft (1.0-1.5 m) trunk diameter 23 lbs/ft\
       \ (370 kg/m)"
-    colorAndAppearance: "No data available."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    colorAndAppearance: null
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with Balsam\
       \ Poplar. See the articles Wood Allergies and Toxicity and Wood Dust Safety\
       \ for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
-    commonUses: "No data available."
+    commonUses: null
     comments: "Gum from this tree is used as the source of “balm of gilead” compound\
       \ used in skin care products."
   images:
@@ -28139,19 +28140,19 @@
     distribution: "From southern/central Europe to central Asia"
     treeSize: "50-80 ft (15-25 m) tall, 2-3 ft (.6-1.0 m) trunk diameter 28 lbs/ft\
       \ (440 kg/m)"
-    colorAndAppearance: "No data available."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    colorAndAppearance: null
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with White\
       \ Poplar. See the articles Wood Allergies and Toxicity and Wood Dust Safety\
       \ for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
-    commonUses: "No data available."
+    commonUses: null
     comments: "Many Italian renaissance painters such as Leonard da Vinci painted\
       \ on wooden panels which were often made of Populus alba."
   images:
@@ -28164,7 +28165,7 @@
     jankaHardness: "410 lb (1,820 N)"
     ruptureModulus: "9,430 lb/in (65.0 MPa)"
     elasticModulus: "1,290,000 lb/in (8.90 GPa)"
-    crushingStrength: "No data available"
+    crushingStrength: null
     shrinkage: "Radial: 3.2%, Tangential: 5.2%, Volumetric: 8.4%, T/R Ratio: 1.6"
   macroscopic:
     porosity: null
@@ -28802,13 +28803,13 @@
     commonNames:
     - "Queenwood"
     distribution: "Peru"
-    treeSize: "No data available 58 lbs/ft (935 kg/m)"
+    treeSize: null
     colorAndAppearance: "Color varies, but is generally a light reddish brown, with\
       \ sections of darker purplish brown, as well as darker black streaks and veins\
       \ throughout. Sapwood is a pale grayish brown to cream color, and is sharply\
       \ demarcated from the heartwood."
     grainAndTexture: "Fine, even grain, with good natural luster."
-    rotResistance: "No data available."
+    rotResistance: null
     workability: "Good workability, turns well. Prone to end checking during drying."
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
@@ -28823,7 +28824,7 @@
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
     commonUses: "Turned objects, and other small specialty wood items."
-    comments: "No data available."
+    comments: null
   images:
     endGrainImage: "https://www.wood-database.com/wp-content/uploads/queenwood-endgrain.jpg"
     endGrain10xImage: "https://www.wood-database.com/wp-content/uploads/queenwood-ez.jpg"
@@ -28832,10 +28833,10 @@
     averageDryWeight: "58 lbs/ft (935 kg/m)"
     specificGravity: ".74, .94"
     jankaHardness: "2,170 lb (9,670 N)*"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -28996,7 +28997,7 @@
       \ is clearly demarcated from heartwood."
     grainAndTexture: "Fine, uniform texture with good natural luster."
     rotResistance: "Rated as very durable; good insect resistance."
-    workability: "No data available."
+    workability: null
     odor: "As the name suggests, this wood has an odor similar to raspberry jam when\
       \ cut."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
@@ -29030,7 +29031,7 @@
     vessels: "large, few"
     parenchyma: "vasicentric"
     rays: "narrow, normal spacing"
-    lookalikes: "No data available."
+    lookalikes: null
     notes: "Heartwood fluoresces under blacklight."
 - scientificName: "Cercis canadensis"
   basicData:
@@ -29079,10 +29080,10 @@
     averageDryWeight: "47.0 lbs/ft"
     specificGravity: ".63, .75"
     jankaHardness: "1,660 lb"
-    ruptureModulus: "No data available."
-    elasticModulus: "No data available."
-    crushingStrength: "No data available."
-    shrinkage: "No data available."
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: "ring porous or semi-ring-porous"
     arrangement: "earlywood pores in rows of one to three, latewood pores in clusters\
@@ -29577,9 +29578,9 @@
     averageDryWeight: "59 lbs/ft (940 kg/m)"
     specificGravity: ".78, .94"
     jankaHardness: "2,710 lb (12,060 N)"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
     shrinkage: "Radial: ~2%, Tangential: ~5%, Volumetric: ~7%"
   macroscopic:
     porosity: null
@@ -29711,9 +29712,9 @@
     averageDryWeight: "64.0 lbs/ft"
     specificGravity: "0.82, 1.03"
     jankaHardness: "2,200 lb"
-    ruptureModulus: "No data available"
+    ruptureModulus: null
     elasticModulus: "3,190,000 lb/in"
-    crushingStrength: "No data available"
+    crushingStrength: null
     shrinkage: "No data available, but it is reported to have very low shrinkage rates\
       \ consistent with most rosewoods."
   macroscopic:
@@ -29859,7 +29860,7 @@
     ruptureModulus: "24,800 lb/in (171.0 MPa)"
     elasticModulus: "2,375,000 lb/in (16.38 GPa)"
     crushingStrength: "16,970 lb/in (117.0 MPa)"
-    shrinkage: "No data available"
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -29922,7 +29923,7 @@
     jankaHardness: "2,790 lb (12,410 N)"
     ruptureModulus: "15,830 lb/in (109.2 MPa)"
     elasticModulus: "2,030,000 lb/in (14.00 GPa)"
-    crushingStrength: "No data available"
+    crushingStrength: null
     shrinkage: "Radial: 4.0%, Tangential: 7.0%, Volumetric: 9.7%, T/R Ratio: 1.8"
   macroscopic:
     porosity: null
@@ -30017,21 +30018,21 @@
       \ northern Africa, and Asia"
     treeSize: "30-50 ft (9-15 m) tall, 8-16 in (20-40 cm) trunk diameter 48 lbs/ft\
       \ (770 kg/m)"
-    colorAndAppearance: "No data available."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    colorAndAppearance: null
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with Rowan.\
       \ See the articles Wood Allergies and Toxicity and Wood Dust Safety for more\
       \ information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species. Although S. aucuparia is not listed\
       \ on the IUCN Red List, there’s a number of obscurer species with varying levels\
       \ of endangerment."
-    commonUses: "No data available."
+    commonUses: null
     comments: "S. aucuparia wood is fluorescent, while S.torminalis is reportedly\
       \ not."
   images:
@@ -30187,7 +30188,7 @@
       \ darker streaks. Wide sapwood is tan colored and is fairly well demarcated\
       \ from the darker heartwood."
     grainAndTexture: "Grain is generally straight. Texture is fine and uniform."
-    rotResistance: "No data available."
+    rotResistance: null
     workability: "Musk sandalwood is easy to work with both hand and machine tools.\
       \ It glues, turns, and finishes well."
     odor: "Musk sandalwood has a distinct, pleasing odor. Wood shavings and sawdust\
@@ -30234,7 +30235,7 @@
     ruptureModulus: "18,030 lb/in"
     elasticModulus: "1,613,000 lb/in"
     crushingStrength: "8,710 lb/in"
-    shrinkage: "No data available"
+    shrinkage: null
   macroscopic:
     porosity: "diffuse porous"
     arrangement: "usually in radial multiples of two to four pores"
@@ -30707,9 +30708,9 @@
     averageDryWeight: "56 lbs/ft (900 kg/m)"
     specificGravity: ".71, .90"
     jankaHardness: "1,820 lb (8,100 N)"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
     shrinkage: "Radial: ~6%, Tangential: ~9%, Volumetric: ~15%, T/R Ratio: ~1.5"
   macroscopic:
     porosity: null
@@ -31150,19 +31151,19 @@
     distribution: "Northern tropical Africa"
     treeSize: "25-50 ft (8-15 m) tall, 1-2 ft (.3-.6 m) trunk diameter 41 lbs/ft (660\
       \ kg/m)"
-    colorAndAppearance: "No data available."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    colorAndAppearance: null
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with Shittim.\
       \ See the articles Wood Allergies and Toxicity and Wood Dust Safety for more\
       \ information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
-    commonUses: "No data available."
+    commonUses: null
     comments: "Believed to be the species used to construct the Ark of the Covenant\
       \ in the Hebrew Bible. (Other suspected species include: Faidherbia albida,\
       \ Vachellia nilotica, and Vachellia tortilis, all of which have been previously\
@@ -31563,7 +31564,7 @@
     ruptureModulus: "28,270 lb/in"
     elasticModulus: "3,364,000 lb/in"
     crushingStrength: "17,260 lb/in"
-    shrinkage: ""
+    shrinkage: "Radial: 4.7%, Tangential: 6.0% Volumetric: 10.7%, T/R Ratio: 1.3"
   macroscopic:
     porosity: "diffuse porous; growth rings generally not discernible"
     arrangement: "solitary and radial multiples"
@@ -31716,21 +31717,21 @@
     distribution: "Southeastern United States"
     treeSize: "30-65 ft (10-20 m) tall, 1-2 ft (.3-.6 m) trunk diameter 38 lbs/ft\
       \ (610 kg/m)"
-    colorAndAppearance: "No data available."
-    grainAndTexture: "No data available."
-    rotResistance: "No data available."
-    workability: "No data available."
+    colorAndAppearance: null
+    grainAndTexture: null
+    rotResistance: null
+    workability: null
     odor: "Sourwood has a faint scent while being worked that is vaguely reminiscent\
       \ of potatoes."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with Sourwood.\
       \ See the articles Wood Allergies and Toxicity and Wood Dust Safety for more\
       \ information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
-    commonUses: "No data available."
-    comments: "No data available."
+    commonUses: null
+    comments: null
   images:
     endGrainImage: "https://www.wood-database.com/wp-content/uploads/sourwood-endgrain-gw.jpg"
     endGrain10xImage: "https://www.wood-database.com/wp-content/uploads/sourwood-endgrain-zoom-gw.jpg"
@@ -32282,7 +32283,7 @@
     ruptureModulus: "10,200 lb/in (70.4 MPa)"
     elasticModulus: "1,190,000 lb/in (8.21 GPa)"
     crushingStrength: "5,940 lb/in (41.0 MPa)"
-    shrinkage: "No data available"
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -33084,9 +33085,9 @@
     averageDryWeight: "53.9 lbs/ft"
     specificGravity: ".69, .86"
     jankaHardness: "2,000 lb"
-    ruptureModulus: "No data available"
+    ruptureModulus: null
     elasticModulus: "2,228,000 lb/in"
-    crushingStrength: "No data available"
+    crushingStrength: null
     shrinkage: "No data available; generally considered to have a high amount of shrinkage"
   macroscopic:
     porosity: "diffuse porous; however, growth rings are usually visible due to an\
@@ -33150,7 +33151,7 @@
     ruptureModulus: "20,720 lb/in"
     elasticModulus: "2,066,000 lb/in"
     crushingStrength: "10,150 lb/in"
-    shrinkage: ""
+    shrinkage: "Radial: 4.3%, Tangential: 7.7% Volumetric: 12.2%, T/R Ratio: 1.8"
   macroscopic:
     porosity: "diffuse porous; growth rings sometimes very subtly discernible due\
       \ to thin marginal parenchyma bands interrupting the wider regular parenchyma\
@@ -33236,15 +33237,15 @@
     - "Tigre Caspi"
     - "Tiger Caspi"
     distribution: "Central and South America"
-    treeSize: "No data available 66 lbs/ft (1,065 kg/m)"
+    treeSize: null
     colorAndAppearance: "Heartwood is a yellow to golden or orangish brown, with irregular\
       \ brown/black streaks. Grayish yellow sapwood is slightly paler than heartwood,\
       \ and lacking contrasting streaks: not always immediately distinguishable from\
       \ heartwood. (The wood sample pictured has about 3/4″ of sapwood on the left\
       \ side.) Overall appearance is very similar to Marblewood."
     grainAndTexture: "Medium, uniform texture with good natural luster."
-    rotResistance: "No data available."
-    workability: "No data available."
+    rotResistance: null
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with Tigre\
@@ -33267,9 +33268,9 @@
     averageDryWeight: "66 lbs/ft (1,065 kg/m)"
     specificGravity: ".78, 1.06"
     jankaHardness: "2,420 lb (10,770 N)*"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
     shrinkage: "Radial: 7.6%, Tangential: 10.2%, Volumetric: 17.9%, T/R Ratio: 1.3"
   macroscopic:
     porosity: null
@@ -33551,11 +33552,11 @@
     averageDryWeight: "60 lbs/ft (970 kg/m)"
     specificGravity: ".88, .97"
     jankaHardness: "2,500 lb (11,120 N)"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
     shrinkage: "Reported to be stable in use, with shrinkage rates likely similar\
-      \ to other ."
+      \ to other . rosewoods"
   macroscopic:
     porosity: null
     arrangement: null
@@ -33703,7 +33704,7 @@
     allergiesAndToxicity: "This wood has been reported to cause irritation and swelling\
       \ of the mucous membranes. See the articles Wood Allergies and Toxicity and\
       \ Wood Dust Safety for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
     commonUses: "Exterior applications such as shipbuilding, railroad crossties, and\
@@ -33779,7 +33780,7 @@
     jankaHardness: "1,400 lb (6,230 N)"
     ruptureModulus: "12,800 lb/in (88.3 MPa)"
     elasticModulus: "1,900,000 lb/in ( 13.10 GPa)"
-    crushingStrength: "No data available"
+    crushingStrength: null
     shrinkage: "Radial: 2.7%, Tangential: 7.2%, Volumetric: 9.5%, T/R Ratio: 2.7"
   macroscopic:
     porosity: null
@@ -34005,7 +34006,7 @@
     ruptureModulus: "21,750 lb/in (150.0 MPa)*"
     elasticModulus: "3,118,000 lb/in (21.50 GPa)*"
     crushingStrength: "12,450 lb/in (80.0 MPa)*"
-    shrinkage: "No data available"
+    shrinkage: null
   macroscopic:
     porosity: "diffuse porous"
     arrangement: "solitary and radial multiples"
@@ -34137,10 +34138,10 @@
     averageDryWeight: "46 lbs/ft (745 kg/m)"
     specificGravity: ".60, .74"
     jankaHardness: "1,250 lb (5,560 N)"
-    ruptureModulus: "No data available*"
-    elasticModulus: "No data available*"
-    crushingStrength: "No data available*"
-    shrinkage: "No data available* *Values most likely slightly higher than"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -34291,9 +34292,9 @@
     averageDryWeight: "40 lbs/ft (640 kg/m)"
     specificGravity: ".51, .64"
     jankaHardness: "1,130 lb (5,030 N)"
-    ruptureModulus: "No data available*"
-    elasticModulus: "No data available*"
-    crushingStrength: "No data available*"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
     shrinkage: "Radial: 4.3%, Tangential: 6.4%, Volumetric: 10.7%, T/R Ratio: 1.5"
   macroscopic:
     porosity: null
@@ -34634,13 +34635,13 @@
     grainAndTexture: "Grain is interlocked, with a uniform medium texture and decent\
       \ natural luster."
     rotResistance: "Rated as non-durable; poor insect resistance."
-    workability: "No data available."
+    workability: null
     odor: "No characteristic odor."
     allergiesAndToxicity: "Besides the standard health risks associated with any type\
       \ of wood dust, no further health reactions have been associated with Black\
       \ Wattle. See the articles Wood Allergies and Toxicity and Wood Dust Safety\
       \ for more information."
-    pricingAndAvailability: "No data available."
+    pricingAndAvailability: null
     sustainability: "This wood species is not listed in the CITES Appendices or on\
       \ the IUCN Red List of Threatened Species."
     commonUses: "Flooring, and tannins (harvested from bark)."
@@ -34666,7 +34667,7 @@
     vessels: "medium to large, few; mineral/gum deposits occasionally present"
     parenchyma: "vasicentric, confluent"
     rays: "medium to wide, normal spacing"
-    lookalikes: "No data available."
+    lookalikes: null
     notes: "None."
 - scientificName: "Acacia baileyana"
   basicData:
@@ -35038,7 +35039,7 @@
     ruptureModulus: "21,990 lb/in"
     elasticModulus: "2,548,000 lb/in"
     crushingStrength: "11,710 lb/in"
-    shrinkage: ""
+    shrinkage: "Radial: 4.8%, Tangential: 8.3% Volumetric: 13.3%, T/R Ratio: 1.7"
   macroscopic:
     porosity: "diffuse porous; growth rings sometimes very subtly discernible due\
       \ to thin marginal parenchyma bands interrupting the wider regular parenchyma\
@@ -35171,7 +35172,7 @@
     ruptureModulus: "9,410 lb/in (64.9 MPa)"
     elasticModulus: "1,152,000 lb/in (7.95 GPa)"
     crushingStrength: "3,530 lb/in (24.4 MPa)"
-    shrinkage: "No data available"
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
@@ -35706,8 +35707,8 @@
       \ grain figure."
     grainAndTexture: "Grain is generally straight or slightly interlocked. With a\
       \ medium uniform texture and high natural luster."
-    rotResistance: "No data available."
-    workability: "No data available."
+    rotResistance: null
+    workability: null
     odor: "Have a distinct, pleasing odor when being worked."
     allergiesAndToxicity: "Although severe reactions are quite uncommon, Zitan has\
       \ been reported as an irritant; most common reactions simply include eye irritation,\
@@ -35740,10 +35741,10 @@
     averageDryWeight: "63 lbs/ft (1,010 kg/m)"
     specificGravity: ".88, 1.01"
     jankaHardness: "2,940 lb (13,080 N)"
-    ruptureModulus: "No data available"
-    elasticModulus: "No data available"
-    crushingStrength: "No data available"
-    shrinkage: "No data available"
+    ruptureModulus: null
+    elasticModulus: null
+    crushingStrength: null
+    shrinkage: null
   macroscopic:
     porosity: null
     arrangement: null
