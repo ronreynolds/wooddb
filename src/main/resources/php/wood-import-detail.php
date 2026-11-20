@@ -18,30 +18,30 @@ if ($row = $result->fetch_assoc()) {
         'Identity' => [
             'binomial'           => ['label' => 'Binomial', 'italic' => true],
             'commonName'         => ['label' => 'Common Name'],
-            'commonNamesTsv'     => ['label' => 'Other Common Names'],
+            'commonNamesJson'    => ['label' => 'Common Names JSON', 'json' => true],
             'distribution'       => ['label' => 'Distribution'],
             'treeSize'           => ['label' => 'Tree Size'],
-            'pageUrl'            => ['label' => 'Source Page', 'link' => true],
+            'woodDatabaseUrl'    => ['label' => 'Source Page', 'link' => true],
         ],
         'Appearance & Properties' => [
-            'colorAndAppearance'   => ['label' => 'Color & Appearance'],
-            'grainAndTexture'      => ['label' => 'Grain & Texture'],
-            'odor'                 => ['label' => 'Odor'],
-            'rotResistance'        => ['label' => 'Rot Resistance'],
-            'workability'          => ['label' => 'Workability'],
-            'allergiesAndToxicity' => ['label' => 'Allergies & Toxicity'],
-            'pricingAndAvailability' => ['label' => 'Pricing & Availability'],
-            'sustainability'       => ['label' => 'Sustainability'],
-            'commonUses'           => ['label' => 'Common Uses'],
-            'comments'             => ['label' => 'Comments'],
+            'colorAndAppearance'   => ['label' => 'Color & Appearance', 'block' => true],
+            'grainAndTexture'      => ['label' => 'Grain & Texture', 'block' => true],
+            'odor'                 => ['label' => 'Odor', 'block' => true],
+            'rotResistance'        => ['label' => 'Rot Resistance', 'block' => true],
+            'workability'          => ['label' => 'Workability', 'block' => true],
+            'allergiesAndToxicity' => ['label' => 'Allergies & Toxicity', 'block' => true],
+            'pricingAndAvailability' => ['label' => 'Pricing & Availability', 'block' => true],
+            'sustainability'       => ['label' => 'Sustainability', 'block' => true],
+            'commonUses'           => ['label' => 'Common Uses', 'block' => true],
+            'comments'             => ['label' => 'Comments', 'block' => true],
         ],
         'Physical Data' => [
-            'averageDryWeight' => ['label' => 'Avg Dry Weight (lb/ft³)'],
+            'averageDryWeight' => ['label' => 'Avg Dry Weight'],
             'specificGravity'  => ['label' => 'Specific Gravity'],
-            'jankaHardness'    => ['label' => 'Janka Hardness (lbf)'],
-            'ruptureModulus'   => ['label' => 'Rupture Modulus (psi)'],
-            'elasticModulus'   => ['label' => 'Elastic Modulus (psi)'],
-            'crushingStrength' => ['label' => 'Crushing Strength (psi)'],
+            'jankaHardness'    => ['label' => 'Janka Hardness'],
+            'ruptureModulus'   => ['label' => 'Rupture Modulus'],
+            'elasticModulus'   => ['label' => 'Elastic Modulus'],
+            'crushingStrength' => ['label' => 'Crushing Strength'],
             'shrinkage'        => ['label' => 'Shrinkage'],
         ],
         'Anatomy' => [
@@ -52,13 +52,12 @@ if ($row = $result->fetch_assoc()) {
             'rays'         => ['label' => 'Rays'],
         ],
         'Other' => [
-            'lookalikes' => ['label' => 'Lookalikes'],
-            'notes'      => ['label' => 'Notes'],
+            'lookalikes' => ['label' => 'Lookalikes', 'block' => true],
+            'notes'      => ['label' => 'Notes', 'block' => true],
         ],
     ];
 
     $imageFields = [
-        'imageUrl'         => 'General',
         'endGrainImage'    => 'End Grain',
         'endGrain10xImage' => 'End Grain 10×',
         'edgeGrainImage'   => 'Edge Grain',
@@ -87,7 +86,9 @@ if ($row = $result->fetch_assoc()) {
     <?php foreach ($imageFields as $col => $label) { ?>
         <?php if (!empty($row[$col])) { ?>
         <figure>
-            <img src="<?= htmlspecialchars($row[$col]) ?>" alt="<?= $label ?>"/>
+            <a href="<?= htmlspecialchars($row[$col]) ?>" target="_blank">
+                <img src="<?= htmlspecialchars($row[$col]) ?>" alt="<?= $label ?>"/>
+            </a>
             <figcaption><?= $label ?></figcaption>
         </figure>
         <?php } // end if
@@ -111,18 +112,21 @@ if ($row = $result->fetch_assoc()) {
         <?php
             foreach ($fields as $col => $opts) {
                 $val = $row[$col] ?? '';
-                if (empty($val)) continue;
+//                if (empty($val)) continue;
             ?>
             <tr>
                 <td><?= htmlspecialchars($opts['label']) ?></td>
                 <td>
-                    <?php if (isset($opts['link'])): ?>
+                    <?php if (isset($opts['link'])) { ?>
                         <a href="<?= htmlspecialchars($val) ?>" target="_blank"><?= htmlspecialchars($val) ?></a>
-                    <?php elseif (isset($opts['italic'])): ?>
-                        <em><?= htmlspecialchars($val) ?></em>
-                    <?php else: ?>
-                        <?= nl2br(htmlspecialchars($val)) ?>
-                    <?php endif; ?>
+                    <?php } elseif (isset($opts['italic'])) { ?>
+                        <i><?= htmlspecialchars($val) ?></i>
+                    <?php } elseif (isset($opts['json'])) { ?>
+                        <code><?= $val ?></code>
+                    <?php } elseif (isset($opts['block'])) { ?>
+                        <?= str_replace('.', '.<br/>', $val) ?>
+                    <?php } else { ?>
+                        <?= nl2br(htmlspecialchars(htmlspecialchars($val))) ?><?php } ?>
                 </td>
             </tr>
         <?php
