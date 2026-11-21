@@ -76,73 +76,64 @@ if ($row = $result->fetch_assoc()) {
 </head>
 <body>
 <h1><span class="binomial"><?= htmlspecialchars($row['binomial'] ?? '') ?></span></h1>
-<?php if (!empty($row['commonName'])) { ?>
-    <p style="color:#666; margin-top:-0.5rem;"><?= htmlspecialchars($row['commonName']) ?></p>
-<?php } ?>
+<?php if (!empty($row['commonName']))
+{ ?><p style="color:#666; margin-top:-0.5rem;"><?= htmlspecialchars($row['commonName']) ?></p><?php
+} ?>
 
 <!-- Images -->
-<?php if (array_filter(array_map(fn($k) => $row[$k] ?? '', array_keys($imageFields)))): ?>
+<?php if (array_filter(array_map(fn($k) => $row[$k] ?? '', array_keys($imageFields))))
+{ ?>
 <div class="images">
-    <?php foreach ($imageFields as $col => $label) { ?>
-        <?php if (!empty($row[$col])) { ?>
+    <?php foreach ($imageFields as $col => $label)
+    { ?><?php if (!empty($row[$col]))
+        { ?>
         <figure>
             <a href="<?= htmlspecialchars($row[$col]) ?>" target="_blank">
                 <img src="<?= htmlspecialchars($row[$col]) ?>" alt="<?= $label ?>"/>
             </a>
             <figcaption><?= $label ?></figcaption>
         </figure>
-        <?php } // end if
-        ?>
-    <?php } // end foreach image-fields
-    ?>
-</div>
-<?php endif; ?>
+        <?php
+        } ?>
+    <?php
+    } ?>
+</div><?php
+} ?>
 
 <!-- Field sections -->
-<?php
-    foreach ($sections as $heading => $fields) {
-        $hasContent = false;
-        foreach ($fields as $col => $opts) {
-            if (!empty($row[$col])) { $hasContent = true; break; }
-        }
-        if ($hasContent) {
-    ?>
+<?php foreach ($sections as $heading => $fields)
+{ ?>
     <h2><?= htmlspecialchars($heading) ?></h2>
     <table class="fields">
-        <?php
-            foreach ($fields as $col => $opts) {
-                $val = $row[$col] ?? '';
-//                if (empty($val)) continue;
-            ?>
-            <tr>
-                <td><?= htmlspecialchars($opts['label']) ?></td>
-                <td>
-                    <?php if (isset($opts['link'])) { ?>
-                        <a href="<?= htmlspecialchars($val) ?>" target="_blank"><?= htmlspecialchars($val) ?></a>
-                    <?php } elseif (isset($opts['italic'])) { ?>
-                        <i><?= htmlspecialchars($val) ?></i>
-                    <?php } elseif (isset($opts['json'])) { ?>
-                        <code><?= $val ?></code>
-                    <?php } elseif (isset($opts['block'])) { ?>
-                        <?= str_replace('.', '.<br/>', $val) ?>
-                    <?php } else { ?>
-                        <?= nl2br(htmlspecialchars(htmlspecialchars($val))) ?><?php } ?>
-                </td>
-            </tr>
-        <?php
-            } // end foreach fields
-        ?>
-    </table>
+    <?php foreach ($fields as $col => $opts)
+    {
+        $val = $row[$col] ?? ''; ?>
+        <tr>
+            <td><?= htmlspecialchars($opts['label']) ?></td>
+            <td><?php
+            if (isset($opts['link'])) {
+                ?><a href="<?= htmlspecialchars($val) ?>" target="_blank"><?= htmlspecialchars($val) ?></a><?php
+            } elseif (isset($opts['italic'])) {
+                ?><i><?= htmlspecialchars($val) ?></i><?php
+            } elseif (isset($opts['json'])) {
+                ?><code><?= $val ?></code><?php
+            } elseif (isset($opts['block'])) {
+                ?><?= str_replace('.', '.<br/>', $val) ?><?php
+            } else {
+                ?><?= nl2br(htmlspecialchars(htmlspecialchars($val))) ?><?php
+            } ?></td>
+        </tr>
     <?php
-        } // end if hasContent
-    } // end foreach sections
-    ?>
-    <?php include 'jquery-sort-th.js'?>
-
+    } ?>
+    </table>
+<?php
+} ?>
 <p class="meta">
-    Imported <?= htmlspecialchars(date('M j, Y H:i', strtotime($row['importDate']))) ?>
-    &middot; ID: <?= $row['id'] ?>
-    <?php if ($row['processed']): ?> &middot; Processed<?php endif; ?>
+    <ul>
+        <li>Imported : <?= htmlspecialchars(date('Y-M-j H:i', strtotime($row['importDate']))) ?></li>
+        <li>ID       : <?= $row['id'] ?></li>
+        <li>Processed: <?= $row['processed'] ? 'Yes' : 'No' ?></li>
+    </ul>
 </p>
 
 </body>
