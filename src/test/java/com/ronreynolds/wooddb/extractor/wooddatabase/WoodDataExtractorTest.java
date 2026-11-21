@@ -49,6 +49,16 @@ class WoodDataExtractorTest {
     }
 
     @Test
+    void merbauCommonNames_containsExpected() {
+        Document doc = assertDoesNotThrow(() -> WoodDataExtractor.createDocument(new File(
+                "src/main/resources/source-sites/wood-database/wood-pages/merbau.html")));
+        CombinedWoodData data = WoodDataExtractor.extractWoodData(BASIC_DATA, doc);
+        assertThat(data.metaData().commonNames())
+                .isNotEmpty()
+                .contains("Merbau", "Kwila", "Ipil");
+    }
+
+    @Test
     void extractWoodDataFromFile_works() {
         Document         doc  = assertDoesNotThrow(() -> WoodDataExtractor.createDocument(new File(TEST_FILE_PATH)));
         CombinedWoodData data = WoodDataExtractor.extractWoodData(BASIC_DATA, doc);
