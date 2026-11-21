@@ -4400,7 +4400,9 @@
     commonName: "Bloodwood"
     binomial: "Brosimum rubescens"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Bloodwood"
+    - "Satine"
     distribution: "Tropical South America"
     treeSize: "80-150 ft (25-45 m) tall, 4-7 ft (1.2-2.1 m) trunk diameter 66 lbs/ft\
       \ (1,050 kg/m)"
@@ -7621,7 +7623,10 @@
     commonName: "Cherry, sweet"
     binomial: "Prunus avium"
   metaData:
-    commonNames: null
+    commonNames:
+    - "\_Sweet Cherry"
+    - "Wild Cherry"
+    - "European Cherry"
     distribution: "Europe and Asia"
     treeSize: "32-65 ft (10-20 m) tall, 1-2 ft (.3-.6 m) trunk diameter 39 lbs/ft\
       \ (600 kg/m)"
@@ -20799,7 +20804,10 @@
     commonName: "Merbau"
     binomial: "Intsia bijuga"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Merbau"
+    - "Kwila"
+    - "Ipil"
     distribution: "From East Africa to Southeast Asia and Australia; (primarily New\
       \ Guinea)"
     treeSize: "130-200 ft (40-60 m) tall, 4-5 ft (1.2-1.5 m) trunk diameter 51 lbs/ft\
@@ -21488,7 +21496,8 @@
     commonName: "Mora"
     binomial: "Mora excelsa"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Mora"
     distribution: "Northeastern South America (primarily Guyana and Suriname)"
     treeSize: "100-130 ft (30-40 m) tall, 2-3 ft (.6-1.0 m) trunk diameter 63 lbs/ft\
       \ (1,015 kg/m)"
@@ -21542,7 +21551,9 @@
     commonName: "Mora, Guatemalan"
     binomial: "Inga spp."
   metaData:
-    commonNames: null
+    commonNames:
+    - "Guatemalan Mora"
+    - "Mora"
     distribution: "Guatemala"
     treeSize: "60-80 ft (18-25 m) tall, 2-3 ft (.6-1.0 m) trunk diameter 57 lbs/ft\
       \ (910 kg/m)"
@@ -21940,7 +21951,11 @@
     commonName: "Myrtle"
     binomial: "Umbellularia californica"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Oregon Myrtle"
+    - "California Bay Laurel"
+    - "Pepperwood"
+    - "Myrtlewood"
     distribution: "Coastal regions of southwest Oregon and central California"
     treeSize: "50-80 ft (15-24 m) tall, 2-3 ft (.6-1 m) trunk diameter 40 lbs/ft (635\
       \ kg/m)"
@@ -22235,7 +22250,8 @@
     commonName: "Nyatoh"
     binomial: "Palaquium spp."
   metaData:
-    commonNames: null
+    commonNames:
+    - "Nyatoh"
     distribution: "India through Southeast Asia to the Philippines, New Guinea, and\
       \ the Western Pacific Islands"
     treeSize: "100-130 ft (30-40 m) tall, 2-3 ft (.6-1 m) trunk diameter 39 lbs/ft\
@@ -22292,7 +22308,9 @@
     commonName: "Oak, black"
     binomial: "Quercus velutina"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Black Oak"
+    - "Eastern Black Oak"
     distribution: "Eastern North America"
     treeSize: "65-80 ft (20-25 m) tall, 3-5 ft (1-1.5 m) trunk diameter 45 lbs/ft\
       \ (715 kg/m)"
@@ -22429,7 +22447,10 @@
     commonName: "Oak, bur"
     binomial: "Quercus macrocarpa"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Bur Oak"
+    - "Burr Oak"
+    - "Mossycup Oak"
     distribution: "Eastern and Midwestern United States and south-central Canada"
     treeSize: "80-100 ft (24-30 m) tall, 3-5 ft (1-1.5 m) trunk diameter 45 lbs/ft\
       \ (725 kg/m)"
@@ -22483,7 +22504,9 @@
     commonName: "Oak, California black"
     binomial: "Quercus kelloggii"
   metaData:
-    commonNames: null
+    commonNames:
+    - "California Black Oak"
+    - "Kellogg Oak"
     distribution: "Western United States"
     treeSize: "65-80 ft (20-25 m) tall, 3-4 ft (1-1.2 m) trunk diameter 39 lbs/ft\
       \ (620 kg/m)"
@@ -22539,7 +22562,8 @@
     commonName: "Oak, cherrybark"
     binomial: "Quercus pagoda"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Cherrybark Oak"
     distribution: "Eastern United States"
     treeSize: "80-100 ft (25-30 m) tall, 3-5 ft (1-1.5 m) trunk diameter 49 lbs/ft\
       \ (785 kg/m)"
@@ -22593,7 +22617,8 @@
     commonName: "Oak, chestnut"
     binomial: "Quercus montana"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Chestnut Oak"
     distribution: "Eastern United States"
     treeSize: "60-70 ft (18-22 m) tall, 2-4 ft (.6-1.2 m) trunk diameter 47 lbs/ft\
       \ (750 kg/m)"
@@ -22648,7 +22673,9 @@
     commonName: "Oak, English"
     binomial: "Quercus robur"
   metaData:
-    commonNames: null
+    commonNames:
+    - "English Oak"
+    - "European Oak"
     distribution: "Most of Europe, to Asia Minor, and North Africa"
     treeSize: "80-115 ft (24-35 m) tall, 3-5 ft (1-1.5 m) trunk diameter 42 lbs/ft\
       \ (675 kg/m)"
@@ -22946,7 +22973,8 @@
     commonName: "Oak, laurel"
     binomial: "Quercus laurifolia"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Laurel Oak"
     distribution: "Southeastern United States"
     treeSize: "65-80 ft (20-25 m) tall, 2-4 ft (.6-1.2 m) trunk diameter 46 lbs/ft\
       \ (740 kg/m)"
@@ -23001,7 +23029,9 @@
     commonName: "Oak, live"
     binomial: "Quercus virginiana"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Live Oak"
+    - "Southern Live Oak"
     distribution: "Southeastern United States"
     treeSize: "40-60 ft (12-18 m) tall, 4-6 ft (1.2-1.8 m) trunk diameter 63 lbs/ft\
       \ (1,000 kg/m)"
@@ -23057,7 +23087,8 @@
     commonName: "Oak, Oregon white"
     binomial: "Quercus garryana"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Oregon White Oak"
     distribution: "Pacific Northwestern United States"
     treeSize: "65-85 ft (20-25 m) tall, 3-4 ft (1-1.2 m) trunk diameter 51 lbs/ft\
       \ (815 kg/m)"
@@ -23110,7 +23141,8 @@
     commonName: "Oak, overcup"
     binomial: "Quercus lyrata"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Overcup Oak"
     distribution: "Eastern United States"
     treeSize: "60-90 ft (18-27 m) tall, 2-3 ft (.6-1 m) trunk diameter 47 lbs/ft (760\
       \ kg/m)"
@@ -23164,7 +23196,8 @@
     commonName: "Oak, pin"
     binomial: "Quercus palustris"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Pin Oak"
     distribution: "Eastern United States"
     treeSize: "50-75 ft (15-23 m) tall, 2-4 ft (.6-1.2 m) trunk diameter 44 lbs/ft\
       \ (705 kg/m)"
@@ -23219,7 +23252,8 @@
     commonName: "Oak, post"
     binomial: "Quercus stellata"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Post Oak"
     distribution: "Eastern United States"
     treeSize: "40-60 ft (12-18 m) tall, 1-3 ft (.3-1 m) trunk diameter 47 lbs/ft (750\
       \ kg/m)"
@@ -23356,7 +23390,8 @@
     commonName: "Oak, scarlet"
     binomial: "Quercus coccinea"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Scarlet Oak"
     distribution: "Eastern United States"
     treeSize: "65-100 ft (20-30 m) tall, 3-4 ft (1-1.2 m) trunk diameter 46 lbs/ft\
       \ (735 kg/m)"
@@ -23411,7 +23446,8 @@
     commonName: "Oak, sessile"
     binomial: "Quercus petraea"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Sessile Oak"
     distribution: "Most of Europe, to Asia Minor"
     treeSize: "80-115 ft (24-35 m) tall, 3-5 ft (1-1.5 m) trunk diameter 44 lbs/ft\
       \ (710 kg/m)"
@@ -23532,7 +23568,9 @@
     commonName: "Oak, southern red"
     binomial: "Quercus falcata"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Southern Red Oak"
+    - "Spanish Oak"
     distribution: "Southeastern United States"
     treeSize: "80-100 ft (25-30 m) tall, 3-5 ft (1-1.5 m) trunk diameter 42 lbs/ft\
       \ (675 kg/m)"
@@ -23587,7 +23625,8 @@
     commonName: "Oak, swamp chestnut"
     binomial: "Quercus michauxii"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Swamp Chestnut Oak"
     distribution: "Southern and Central United States"
     treeSize: "60-80 ft (18-24 m) tall, 2-3 ft (.6-1 m) trunk diameter 49 lbs/ft (780\
       \ kg/m)"
@@ -23642,7 +23681,8 @@
     commonName: "Oak, swamp white"
     binomial: "Quercus bicolor"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Swamp White Oak"
     distribution: "Eastern and Midwestern United States"
     treeSize: "50-80 ft (15-24 m) tall, 2-4 ft (.6-1.2 m) trunk diameter 48 lbs/ft\
       \ (765 kg/m)"
@@ -23697,7 +23737,9 @@
     commonName: "Oak, Turkey"
     binomial: "Quercus cerris"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Turkey Oak"
+    - "Turkish Oak"
     distribution: "Europe and Asia Minor"
     treeSize: "80-120 ft (25-37 m) tall, 4-6 ft (1.2-2.0 m) trunk diameter 45 lbs/ft\
       \ (720 kg/m)"
@@ -23745,7 +23787,8 @@
     commonName: "Oak, water"
     binomial: "Quercus nigra"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Water Oak"
     distribution: "Eastern United States"
     treeSize: "50-80 ft (15-24 m) tall, 2-3 ft (.6-1 m) trunk diameter 45 lbs/ft (725\
       \ kg/m)"
@@ -23875,7 +23918,8 @@
     commonName: "Oak, willow"
     binomial: "Quercus phellos"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Willow Oak"
     distribution: "Eastern United States"
     treeSize: "65-100 ft (20-30 m) tall, 3-5 ft (1-1.5 m) trunk diameter 48 lbs/ft\
       \ (770 kg/m)"
@@ -24590,7 +24634,9 @@
     commonName: "Osage orange, Argentine"
     binomial: "Maclura tinctoria"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Argentine Osage Orange"
+    - "Fustic"
     distribution: "Tropical America (West Indies, Central and South America)"
     treeSize: "60-80 ft (18-25 m) tall, 2-3 ft (.6-1.0 m) trunk diameter 57 lbs/ft\
       \ (910 kg/m)"
@@ -25969,7 +26015,8 @@
     commonName: "Pine, Caribbean"
     binomial: "Pinus caribaea"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Caribbean Pine"
     distribution: "Central America and the Caribbean; also grown on plantations worldwide"
     treeSize: "65-100 ft (20-30 m) tall, 2-3 ft (.6-1 m) trunk diameter 39 lbs/ft\
       \ (625 kg/m)"
@@ -26197,7 +26244,8 @@
     commonName: "Pine, jack"
     binomial: "Pinus banksiana"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Jack Pine"
     distribution: "Canada and northern United States"
     treeSize: "50-80 ft (15-24 m) tall, 1-2 ft (.3-.6m) trunk diameter 31 lbs/ft (500\
       \ kg/m)"
@@ -26252,7 +26300,8 @@
     commonName: "Pine, Jeffrey"
     binomial: "Pinus jeffreyi"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Jeffrey Pine"
     distribution: "Mountainous regions of southwestern Oregon to California and northern\
       \ Mexico"
     treeSize: "100-165 ft (30-50 m) tall, 2-4 ft (.6-1.2 m) trunk diameter 28 lbs/ft\
@@ -26414,7 +26463,8 @@
     commonName: "Pine, loblolly"
     binomial: "Pinus taeda"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Loblolly Pine"
     distribution: "Southeastern United States, though also widely grown on plantations"
     treeSize: "100-115 ft (30-35 m) tall, 1.5-5 ft (.4-1.5 m) trunk diameter 35 lbs/ft\
       \ (570 kg/m)"
@@ -26466,7 +26516,9 @@
     commonName: "Pine, lodgepole"
     binomial: "Pinus contorta"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Lodgepole Pine"
+    - "Shore Pine"
     distribution: "Western North America"
     treeSize: "65-100 ft (20-30 m) tall, 1-2 ft (.3-.6 m) trunk diameter; size varies\
       \ widely depending upon subspecies 29 lbs/ft (465 kg/m)"
@@ -27031,7 +27083,8 @@
     commonName: "Pine, ponderosa"
     binomial: "Pinus ponderosa"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Ponderosa Pine"
     distribution: "Western North America"
     treeSize: "100-165 ft (30-50 m) tall, 2-4 ft (.6-1.2 m) trunk diameter 28 lbs/ft\
       \ (450 kg/m)"
@@ -27083,7 +27136,10 @@
     commonName: "Pine, radiata"
     binomial: "Pinus radiata"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Radiata Pine"
+    - "\_Monterey\_Pine"
+    - "Insignis Pine"
     distribution: "Native to central and southern coastal California; also widely\
       \ planted throughout the southern hemisphere"
     treeSize: "80-100 ft (24-30 m) tall, 2-3 ft (.6-1m) trunk diameter 32 lbs/ft (515\
@@ -27363,7 +27419,8 @@
     commonName: "Pine, slash"
     binomial: "Pinus elliottii"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Slash Pine"
     distribution: "Southeastern United States, though also widely grown on plantations"
     treeSize: "60-100 ft (18-30 m) tall, 2-3 ft (.6-1 m) trunk diameter 41 lbs/ft\
       \ (655 kg/m)"
@@ -27414,7 +27471,8 @@
     commonName: "Pine, spruce"
     binomial: "Pinus glabra"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Spruce Pine"
     distribution: "Southeastern United States (coastal plain)"
     treeSize: "65-100 ft (20-30 m) tall, 2-3 ft (.6-1 m) trunk diameter 33 lbs/ft\
       \ (525 kg/m)"
@@ -27927,7 +27985,8 @@
     commonName: "Plum"
     binomial: "Prunus domestica"
   metaData:
-    commonNames: null
+    commonNames:
+    - "Plum"
     distribution: "Widely cultivated in temperate areas worldwide"
     treeSize: "20-40 ft (6-12 m) tall, 1-1.5 ft (.3-.4 m) trunk diameter 50 lbs/ft\
       \ (795 kg/m)"
@@ -29336,7 +29395,10 @@
     commonName: "Rengas"
     binomial: "Gluta spp."
   metaData:
-    commonNames: null
+    commonNames:
+    - "Rengas"
+    - "Borneo Rosewood"
+    - "Tiger Rengas"
     distribution: "From India to Papua New Guinea"
     treeSize: "100-130 ft (30-40 m) tall, 2-4 ft (.6-1.2 m) trunk diameter 48 lbs/ft\
       \ (765 kg/m)"

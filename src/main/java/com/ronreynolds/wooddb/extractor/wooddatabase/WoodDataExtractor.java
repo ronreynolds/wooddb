@@ -1,5 +1,6 @@
 package com.ronreynolds.wooddb.extractor.wooddatabase;
 
+import com.ronreynolds.util.jsoup.JSoup;
 import com.ronreynolds.wooddb.data.BasicWoodData;
 import com.ronreynolds.wooddb.data.CombinedWoodData;
 import com.ronreynolds.wooddb.data.MaterialData;
@@ -12,6 +13,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.helper.ValidationException;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.jsoup.nodes.Node;
 import org.jsoup.select.Evaluator;
 import org.jsoup.select.QueryParser;
 
@@ -38,6 +40,7 @@ public class WoodDataExtractor {
     private enum CSSPaths {
         // MaterialData
         commonNames("p:has(a[href='https://www.wood-database.com/wood-articles/common-name/'])"),
+        commonNamesMalformed("a[href='https://www.wood-database.com/wood-articles/common-name/']", nextSiblingTextMethod()),
         // can contain child tags and we want all the text
         scientificName("p:has(a[href='https://www.wood-database.com/wood-articles/scientific-name/'])",
                 trimPrefixTextMethod("Scientific Name:")),
@@ -113,15 +116,19 @@ public class WoodDataExtractor {
         }
 
         Optional<Element> select(Document doc) {
-            return Optional.ofNullable(doc.selectFirst(eval));
+            Element e = doc.selectFirst(eval);
+            if (e == null) {
+                log.info("unable to find {}", cssPath);
+            }
+            return Optional.ofNullable(e);
         }
         String text(Document doc) {
-            String text = select(doc).map(getTextMethod).orElse(null);
-            if (text == null) {
-                log.info("unable to find {}", cssPath);
-                return text;
+            Optional<Element> element = select(doc);
+            if (element.isEmpty()) {
+                return null;
             }
-            text = text.trim();
+            String text = getTextMethod.apply(element.get());
+            text = StringUtils.trimToEmpty(text);
             // filter out the "No data available." and the version with the little footnote marker that appears on some pages
             if (NO_DATA_AVAILABLE.matcher(text).matches()) {
                 text = null;
@@ -129,7 +136,8 @@ public class WoodDataExtractor {
             return text;
         }
         String[] textArray(Document doc) {
-            return select(doc).map(element -> TRIM_COMMA.split(getTextMethod.apply(element).trim())).orElse(null);
+            Optional<Element> element = select(doc);
+            return element.map(e -> TRIM_COMMA.split(getTextMethod.apply(e).trim())).orElse(null);
         }
 
         /**
@@ -168,6 +176,16 @@ public class WoodDataExtractor {
                     }
                 }
                 return buf.toString();
+            };
+        }
+
+        private static Function<Element, String> nextSiblingTextMethod() {
+            return e -> {
+                Node nextSibling = e.nextSibling(); // this handles both Text and Element nodes
+                if (nextSibling != null) {
+                    return JSoup.text(nextSibling); // can be a few different Node types; JSoup.text() handles a few
+                }
+                return null;
             };
         }
     }
@@ -214,11 +232,16 @@ public class WoodDataExtractor {
                 scientificName = woodData.binomial();
             }
         }
+        String[] commonNames = CSSPaths.commonNames.textArray(doc);
+        if (commonNames == null || commonNames.length == 0) {
+            log.info("unable to find common names; checking for malformed version");
+            commonNames = CSSPaths.commonNamesMalformed.textArray(doc);
+        }
         return new CombinedWoodData(
                 scientificName,
                 woodData,
                 new WoodMetaData(
-                        CSSPaths.commonNames.textArray(doc),
+                        commonNames,
                         CSSPaths.distribution.text(doc),
                         CSSPaths.treeSize.text(doc),
                         CSSPaths.colorAppearance.text(doc),
