@@ -7624,7 +7624,7 @@
     binomial: "Prunus avium"
   metaData:
     commonNames:
-    - "\_Sweet Cherry"
+    - "Sweet Cherry"
     - "Wild Cherry"
     - "European Cherry"
     distribution: "Europe and Asia"
@@ -13916,7 +13916,6 @@
   metaData:
     commonNames:
     - "Huanghuali"
-    - ""
     - "Hainan Huanghuali"
     - "fragrant rosewood"
     - "Chinese rosewood"
@@ -27138,7 +27137,7 @@
   metaData:
     commonNames:
     - "Radiata Pine"
-    - "\_Monterey\_Pine"
+    - "Monterey Pine"
     - "Insignis Pine"
     distribution: "Native to central and southern coastal California; also widely\
       \ planted throughout the southern hemisphere"
