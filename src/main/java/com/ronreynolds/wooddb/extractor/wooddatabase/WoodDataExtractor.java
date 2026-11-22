@@ -25,6 +25,7 @@ import java.util.Optional;
 import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Stream;
 
 /**
  * extracts wood data from each wood-specific HTML page and writes it all as YAML back to disc
@@ -137,7 +138,14 @@ public class WoodDataExtractor {
         }
         String[] textArray(Document doc) {
             Optional<Element> element = select(doc);
-            return element.map(e -> TRIM_COMMA.split(getTextMethod.apply(e).trim())).orElse(null);
+            if (element.isEmpty()) {
+                return null;
+            }
+            String text = getTextMethod.apply(element.get());
+            return Stream.of(TRIM_COMMA.split(text))    // split on comma
+                    .map(String::trim)                  // remove leading/trailing whitespace
+                    .filter(s -> !s.isEmpty())          // remove empty strings
+                    .toArray(String[]::new);            // convert to array
         }
 
         /**
