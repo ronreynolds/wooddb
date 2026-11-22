@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="YamlDbImporter" type="Application" factoryName="Application" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="com.ronreynolds.wooddb.importer.YamlDbImporter" />
+    <module name="wooddb.main" />
+    <option name="PROGRAM_PARAMETERS" value="--truncate --batchSize=50 --logSizes=false" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
